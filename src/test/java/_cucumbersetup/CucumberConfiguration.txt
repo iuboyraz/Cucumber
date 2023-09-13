@@ -23,8 +23,9 @@
 
    4-Creating folders
    Create following folders under the test/java folder
+
    FeatureFiles   -> Senaryolarýmýzýn olduðu klasör
-   StepDefinitions-> Senaryolarýn çalýþan adýmlarý - metodlarý burada olacak
    Pages          -> Page Object Model sayfalarýmýz POM (@FindBy)
-   Utilities      -> Driver ve diðer tekrar kullanýlacak metodlarýmýz
    Runners        -> Çalýþtýrýcýlar
+   StepDefinitions-> Senaryolarýn çalýþan adýmlarý - metodlarý burada olacak
+   Utilities      -> Driver ve diðer tekrar kullanýlacak metodlarýmýz
