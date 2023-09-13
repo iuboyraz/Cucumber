@@ -14,7 +14,7 @@
    . add under every depency "<scope>test</scope>" line
    . correct compiler version 19 -> 1.9
 
-   3-Intellij Editor configuration
+   3-Intellij Editor configuration (If you added it once never need to add it  for every cucumber project)
    File
    settings
    plugins
