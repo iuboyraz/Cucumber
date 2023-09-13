@@ -6,6 +6,7 @@ import io.cucumber.java.en.*;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 import java.time.Duration;
 
@@ -23,18 +24,30 @@ public class _01_LoginSteps {
     public void enter_username_and_password_and_click_login_button() {
         //System.out.println("Username ve Password girildi.");
 
-        WebDriverWait wait = new WebDriverWait(GWD.getDriver(), Duration.ofSeconds(20));
+        /*
+        WebDriverWait wait=new WebDriverWait(GWD.getDriver(), Duration.ofSeconds(20));
         wait.until(ExpectedConditions.visibilityOf(dc.username));
 
-        dc.sendKeys(dc.username, "turkeyts");
-        dc.sendKeys(dc.password,"TechnoStudy123");
-        //dc.loginButton.click();
-        dc.click(dc.loginButton);
+        dc.username.sendKeys("turkeyts");
+        dc.password.sendKeys("TechnoStudy123");
+        dc.loginButton.click();
+        */
+
+        dc.mySendKeys(dc.username, "turkeyts");
+        dc.mySendKeys(dc.password,"TechnoStudy123");
+        dc.myClick(dc.loginButton);
     }
 
     @Then("User should login successfully")
     public void user_should_login_successfully() {
-        System.out.println("Siteye giriþ test edildi.");
+        //System.out.println("Siteye giriþ test edildi.");
+
+        /*
+        WebDriverWait wait = new WebDriverWait(GWD.getDriver(), Duration.ofSeconds(20));
+        wait.until(ExpectedConditions.textToBePresentInElement(dc.txtTechnoStudy, "Techno Study"));
+        Assert.assertTrue(dc.txtTechnoStudy.getText().toLowerCase().contains("techno study"));
+        */
+        dc.verifyContainsText(dc.txtTechnoStudy, "Techno Study");
     }
 
 }

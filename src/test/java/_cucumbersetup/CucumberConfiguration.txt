@@ -10,6 +10,8 @@
         4-io.cucumber:cucumber-testng 7.9.0 (io.cucumber/cucumber-testng)
         5-slf4j-api 1.8.0-beta2
         6-slf4j-simple 1.8.0-beta2
+        7-Apache Commons Lang 3.12.0
+        (Rastgele String üretimi için kullanýlýyor. Örnek:cucumber projesi/CountrySteps class'a bak)
 
    . add under every depency "<scope>test</scope>" line
    . correct compiler version 19 -> 1.9

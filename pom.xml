@@ -16,9 +16,13 @@
 
     <dependencies>
         <!--Eklenecek dependenciesler-->
-        <!--Selenium-->
-        <!--TestNG-->
-        <!--Cucumber-->
+        <!--selenium-->
+        <!--testNG-->
+        <!--cucumber-Java-->
+        <!--cucumber-testNG-->
+        <!--sl4fj-api-->
+        <!--sl4fj-simple-->
+        <!--apache.commons:commons-lang3-->
 
         <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
         <dependency>
@@ -64,6 +68,14 @@
             <version>1.8.0-beta2</version>
             <scope>test</scope>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.12.0</version>
+        </dependency>
+
 
     </dependencies>
 
