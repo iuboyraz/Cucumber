@@ -45,5 +45,27 @@ public class DialogContent extends Parent{
     @FindBy(xpath="//div[contains(text(),'successfully')]")
     public WebElement successMessage;
 
+    @FindBy(xpath="//*[@formcontrolname='shortName']//input")
+    public WebElement shortName;
+
+    @FindBy(xpath="//div[contains(text(),'already exists')]")
+    public WebElement alreadyExist;
+
+    @FindBy(xpath="//ms-text-field[contains(@placeholder,'NAME')]//input")
+    public WebElement citizenshipName;
+
+    @FindBy(xpath="(//*[@class='mdc-button__label'])[3]//span")
+    public WebElement citizenshipSearchButton;
+
+    @FindBy(xpath="//ms-delete-button[@class='ng-star-inserted']")
+    public WebElement citizenshipDeleteButton1;
+
+    @FindBy(xpath="//*[@type='submit']")
+    public WebElement citizenshipDeleteButton2;
+
+
+
+
+
 
 }

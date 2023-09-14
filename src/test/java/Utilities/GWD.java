@@ -21,7 +21,7 @@ public class GWD {
     public static void quitDriver() {
         // test sonucunun ekranda bir miktar beklemesi için
         try {
-            Thread.sleep(5000);
+            Thread.sleep(3000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }

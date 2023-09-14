@@ -14,7 +14,7 @@ public class Hooks {
     @After
     public void after(){
         // System.out.println("Senaryo bitti mi?");
-        // doðru çalýþýrsa quit'i çaðýracaðýz.
+        // doðru çalýþýrsa quitDriver()'ý çaðýracaðýz.
         GWD.quitDriver(); // driver'ý kapattýk.
     }
 }

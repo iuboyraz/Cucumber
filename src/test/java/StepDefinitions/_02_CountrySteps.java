@@ -10,7 +10,6 @@ import org.apache.commons.lang3.RandomStringUtils;
 public class _02_CountrySteps {
 
     LeftNav ln = new LeftNav();
-
     DialogContent dc = new DialogContent();
 
     @And("Navigate to country")
@@ -37,8 +36,8 @@ public class _02_CountrySteps {
         String ulkeKodu = RandomStringUtils.randomNumeric(4); // 4 rakam
 
         dc.myClick(dc.addButton);
-        dc.mySendKeys(dc.nameInput, "AliCabbarCountry59");
-        dc.mySendKeys(dc.codeInput, "cabbar59");
+        dc.mySendKeys(dc.nameInput, ulkeAdi);//"AliCabbarCountry59"
+        dc.mySendKeys(dc.codeInput, ulkeKodu);//"cabbar59"
         dc.myClick(dc.saveButton);
     }
 
@@ -48,5 +47,16 @@ public class _02_CountrySteps {
         success yazýsý çýktý mý kontrol et.
          */
         dc.verifyContainsText(dc.successMessage, "success");
+    }
+    /*
+     _03_CountryMultipleScenarios.feature dosyasýnda Background ve scenarios oluþturduk.
+     2. scenario da name as "" ve code as "" kullandýk.
+    */
+    @When("Create a country name as {string} code as {string}")
+    public void createACountryNameAsCodeAs(String name, String code) {
+        dc.myClick(dc.addButton);
+        dc.mySendKeys(dc.nameInput, name);
+        dc.mySendKeys(dc.codeInput, code);
+        dc.myClick(dc.saveButton);
     }
 }

@@ -4,6 +4,7 @@
    2-POM.xml configuration
    Go to the https://mvnrepository.com/
    find following dependencies copy and paste them into the pom.xml file
+
         1-org.seleniumhq.selenium:selenium-java:4.11.0
         2-org.testng:testng:6.14.3
         3-io.cucumber:cucumber-java 7.9.0 (io.cucumber/cucumber-java)

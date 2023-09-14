@@ -13,19 +13,21 @@ public class Parent {
     WebDriverWait wait = new WebDriverWait(GWD.getDriver(), Duration.ofSeconds(20));
 
     public void myClick(WebElement element){
-        /* Bir butona týklanacaðý zaman yapýlacak iþlemler;
+        /*
+        Bir butona týklanacaðý zaman yapýlacak iþlemler;
         1- wait element to be clickable
         2- scroll to the element
         3- click
          */
 
-        wait.until(ExpectedConditions.visibilityOf(element));
+        wait.until(ExpectedConditions.elementToBeClickable(element));
         element.click();
 
     }
 
     public void mySendKeys(WebElement element, String yazi){
-        /* Bir textbox'ýn saðlýklý çalýþmasý için yapýlacak iþlemler;
+        /*
+        Bir textbox'ýn saðlýklý çalýþmasý için yapýlacak iþlemler;
         1- wait element to be visible
         2- scroll to the element
         3- clear
