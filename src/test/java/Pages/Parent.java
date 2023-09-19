@@ -1,16 +1,23 @@
 package Pages;
 
 import Utilities.GWD;
+import io.cucumber.java.en_old.Ac;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+
+import java.awt.event.KeyEvent;
 import java.time.Duration;
+
+import static java.awt.event.KeyEvent.VK_ESCAPE;
 
 public class Parent {
 
-    WebDriverWait wait = new WebDriverWait(GWD.getDriver(), Duration.ofSeconds(20));
+    public WebDriverWait wait = new WebDriverWait(GWD.getDriver(), Duration.ofSeconds(20));
 
     public void myClick(WebElement element){
         /*
@@ -50,6 +57,9 @@ public class Parent {
 
         wait.until(ExpectedConditions.textToBePresentInElement(element,value));
         Assert.assertTrue(element.getText().toLowerCase().contains(value.toLowerCase()));
+        //Programý çalýþtýrdýðýmýzda silmede çýkan mesaj (dialog kutusu) Unable to locate element hatasý oluþturuyor.
+        //Actions ile ESC ye basarak çýkan mesajý kapatarak çözdük.
+        new Actions(GWD.getDriver()).sendKeys(Keys.ESCAPE).build().perform();
 
     }
 

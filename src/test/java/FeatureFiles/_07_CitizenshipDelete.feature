@@ -22,6 +22,9 @@ Feature: Citizenship Functionality
     When Create a citizenship name as "<name>" shortname as "<shortname>"
     Then Already exist message should be displayed
 
+    When User delete the name "<name>"
+    Then Success message should be displayed
+
     Examples:
       | name            | shortname |
       | CabbarCountry60 | cc60      |
@@ -30,15 +33,4 @@ Feature: Citizenship Functionality
       | CabbarCountry63 | cc63      |
       | CabbarCountry64 | cc64      |
 
-  Scenario Outline: Delete citizenship
-    When Delete a citizenship name as "<name>"
-    Then Success message should be displayed
-
-    Examples:
-      | name            |
-      | CabbarCountry60 |
-      | CabbarCountry61 |
-      | CabbarCountry62 |
-      | CabbarCountry63 |
-      | CabbarCountry64 |
 

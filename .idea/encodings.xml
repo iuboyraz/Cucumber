@@ -3,6 +3,7 @@
   <component name="Encoding" defaultCharsetForPropertiesFiles="ISO-8859-1">
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/test/java/StepDefinitions/_08_DataTableOrnek.java" charset="windows-1254" />
     <file url="PROJECT" charset="windows-1254" />
   </component>
 </project>

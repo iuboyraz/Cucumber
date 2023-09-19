@@ -16,6 +16,6 @@ Feature: Citizenship Functionality
     When Create a citizenship name as "CabbarCountry59" shortname as "cc59"
     Then Success message should be displayed
 
-  Scenario: Create citizenship 3
+  Scenario: Create citizenship 2
     When Create a citizenship name as "CabbarCountry59" shortname as "cc59"
     Then Already exist message should be displayed

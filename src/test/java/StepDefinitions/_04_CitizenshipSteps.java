@@ -2,10 +2,16 @@ package StepDefinitions;
 
 import Pages.DialogContent;
 import Pages.LeftNav;
+import Utilities.GWD;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.apache.commons.lang3.RandomStringUtils;
+import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 
 public class _04_CitizenshipSteps {
 
@@ -38,7 +44,6 @@ public class _04_CitizenshipSteps {
         dc.mySendKeys(dc.nameInput, name);
         dc.mySendKeys(dc.shortName, shortName);
         dc.myClick(dc.saveButton);
-
     }
 
     @Then("Already exist message should be displayed")
@@ -46,11 +51,8 @@ public class _04_CitizenshipSteps {
         dc.verifyContainsText(dc.alreadyExist, "already");
     }
 
-    @When("Delete a citizenship name as {string}")
-    public void deleteACitizenshipNameAs(String name) {
-        dc.mySendKeys(dc.citizenshipName,name);
-        dc.myClick(dc.citizenshipSearchButton);
-        dc.myClick(dc.citizenshipDeleteButton1);
-        dc.myClick(dc.citizenshipDeleteButton2);
+    @When("User delete the name {string}")
+    public void deleteACitizenshipNameAs(String name) throws InterruptedException {
+        dc.deleteItem(name);
     }
 }

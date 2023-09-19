@@ -17,7 +17,7 @@
    . add under every depency "<scope>test</scope>" line
    . correct compiler version 19 -> 1.9
 
-   3-Intellij Editor configuration (If you added it once never need to add it  for every cucumber project)
+   3-Intellij Editor configuration (If you add it once never need to add it for every cucumber project)
    File
    settings
    plugins
@@ -30,5 +30,5 @@
    FeatureFiles   -> Senaryolarýmýzýn olduðu klasör
    Pages          -> Page Object Model sayfalarýmýz POM (@FindBy)
    Runners        -> Çalýþtýrýcýlar
-   StepDefinitions-> Senaryolarýn çalýþan adýmlarý - metodlarý burada olacak
+   StepDefinitions-> Senaryolarýn çalýþan adýmlarý ve metodlarý burada olacak
    Utilities      -> Driver ve diðer tekrar kullanýlacak metodlarýmýz

@@ -1,6 +1,7 @@
 package Pages;
 
 import Utilities.GWD;
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -8,7 +9,6 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-
 import javax.swing.plaf.PanelUI;
 import java.time.Duration;
 
@@ -52,20 +52,62 @@ public class DialogContent extends Parent{
     public WebElement alreadyExist;
 
     @FindBy(xpath="//ms-text-field[contains(@placeholder,'NAME')]//input")
-    public WebElement citizenshipName;
+    public WebElement searchInput;
 
-    @FindBy(xpath="(//*[@class='mdc-button__label'])[3]//span")
-    public WebElement citizenshipSearchButton;
+    @FindBy(xpath="//ms-search-button//button")
+    public WebElement searchButton;
 
-    @FindBy(xpath="//ms-delete-button[@class='ng-star-inserted']")
-    public WebElement citizenshipDeleteButton1;
+    @FindBy(xpath="(//ms-delete-button//button)[1]")//(((//table//tbody//tr)[1]//td)[4]//button)[2]
+    public WebElement deleteImageButton;
 
-    @FindBy(xpath="//*[@type='submit']")
-    public WebElement citizenshipDeleteButton2;
+    @FindBy(xpath="//button[@type='submit']")
+    public WebElement deleteDialogButton;
 
+    @FindBy(xpath="//ms-text-field[@formcontrolname='budgetAccountIntegrationCode']//input")
+    private WebElement integrationCode;
 
+    @FindBy(xpath="//ms-integer-field[@formcontrolname='priority']/input")
+    private WebElement priorityCode;
 
+    @FindBy(xpath="//mat-slide-toggle[@formcontrolname='active']")
+    private WebElement toggleBar;
 
+     public WebElement getWebElement(String strElement){
+        switch (strElement){
+            case "addButton": return this.addButton;
+            case "saveButton": return this.saveButton;
+            case "nameInput": return this.nameInput;
+            case "codeInput": return this.codeInput;
+            case "integrationCode": return this.integrationCode;
+            case "priorityCode": return this.priorityCode;
+            case "toggleBar": return this.toggleBar;
+        }
+        return null;
+    }
 
+    public void deleteItem(String searchText){
+        mySendKeys(searchInput,searchText);
+        myClick(searchButton);
+        /*
+        1. Yöntem:
+         Programý çalýþtýrdýðýmýzda search iþleminden sonra ekran yenilendiði için
+         deleteButton1 elementte stale element hatasý oluþuyor.
+         Bunu engellemek için citizenshipSearchButton cilickable olana kadar bekletiyoruz.
+         dc.wait.until(ExpectedConditions.elementToBeClickable(dc.citizenshipSearchButton));
+         */
+
+        // 2. Yöntem: wait.until(ExpectedConditions.stalenessOf(dc.deleteImageBtn)); //kullanýlabilir ama her zaman çözmez!
+
+        /*
+        3. Yöntem:
+        sayfanýn kendi waitini, search yapýldýðýnda meydana gelen loading iþlemini yakalayalým. (en saðlam yöntem)
+        fuse-progress-bar/*    -> fuse-progress-bar ýn çocuklarý demek
+        bu çocuklarýn sayýsý 0 olana kadar bekle.
+        */
+        wait.until(ExpectedConditions.numberOfElementsToBe(By.xpath("//fuse-progress-bar/*"),0));
+
+        myClick(deleteImageButton);
+        myClick(deleteDialogButton);
+    }
 
 }
