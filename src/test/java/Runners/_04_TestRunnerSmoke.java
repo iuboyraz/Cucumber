@@ -1,0 +1,14 @@
+package Runners;
+
+import io.cucumber.testng.AbstractTestNGCucumberTests;
+import io.cucumber.testng.CucumberOptions;
+
+@CucumberOptions(
+        // aþaðýdaki testlerde smoke olanlarý çalýþtýr.
+        tags = "@SmokeTest", //@Regression da denilebilir. Ýlgili FeatureFiles da gerekli annotation verilir.
+        features = {"src/test/java/FeatureFiles"},//klasördeki bütün featurelar
+        glue={"StepDefinitions"}
+)
+
+public class _04_TestRunnerSmoke extends AbstractTestNGCucumberTests {
+}

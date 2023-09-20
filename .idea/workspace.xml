@@ -5,23 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8982d521-96b2-4787-b4e4-1f97b7dfca43" name="Changes" comment="updates">
-      <change afterPath="$PROJECT_DIR$/src/test/java/FeatureFiles/_08_DataTableOrnek.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/FeatureFiles/_09_DataTable.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/FeatureFiles/_10_FeesScenarioOutlineDataTable.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/FeatureFiles/_11_EntranceExam.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/FeatureFiles/_12_EntranceExamScenarioOutline.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/StepDefinitions/_08_DataTableOrnek.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/StepDefinitions/_09_DataTableSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Runners/_01_TestRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Runners/_02_TestRunnerBelirliFeatureler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Runners/_03_TestRunnerAll.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Runners/_04_TestRunnerSmoke.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Runners/_05_TestRunnerRegression.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/FeatureFiles/_05_CitizenshipParameter.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FeatureFiles/_05_CitizenshipParameter.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/FeatureFiles/_07_CitizenshipDelete.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FeatureFiles/_07_CitizenshipDelete.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/FeatureFiles/_01_Login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FeatureFiles/_01_Login.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/FeatureFiles/_02_Country.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FeatureFiles/_02_Country.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/FeatureFiles/_03_CountryMultipleScenarios.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FeatureFiles/_03_CountryMultipleScenarios.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/FeatureFiles/_11_EntranceExam.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FeatureFiles/_11_EntranceExam.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/FeatureFiles/_12_EntranceExamScenarioOutline.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FeatureFiles/_12_EntranceExamScenarioOutline.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Pages/DialogContent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/DialogContent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Pages/LeftNav.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/LeftNav.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Pages/Parent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/Parent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/StepDefinitions/_04_CitizenshipSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefinitions/_04_CitizenshipSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Utilities/GWD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utilities/GWD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/_cucumbersetup/CucumberConfiguration.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/_cucumbersetup/CucumberConfiguration.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/StepDefinitions/_01_LoginSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefinitions/_01_LoginSteps.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +57,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "ignore.virus.scanning.warn.message": "true",
     "last_directory_selection": "C:/JavaLessons/Bootcamp/Cucumber/src/test/java/StepDefinitions",
-    "last_opened_file_path": "C:/JavaLessons/Bootcamp/TestNG",
+    "last_opened_file_path": "C:/JavaLessons/Bootcamp/Cucumber",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
@@ -75,15 +73,15 @@
       <recent name="StepDefinitions" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Feature: _10_FeesScenarioOutlineDataTable">
-    <configuration name="Feature: _09_DataTable" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Cucumber Java.Feature: _11_EntranceExam">
+    <configuration name="Feature: _10_FeesScenarioOutlineDataTable" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/FeatureFiles/_09_DataTable.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/FeatureFiles/_10_FeesScenarioOutlineDataTable.feature" />
       <option name="GLUE" value="StepDefinitions" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="Cucumber" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: _09_DataTable" />
+      <option name="SUGGESTED_NAME" value="Feature: _10_FeesScenarioOutlineDataTable" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -95,14 +93,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Feature: _10_FeesScenarioOutlineDataTable" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Feature: _11_EntranceExam" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/FeatureFiles/_10_FeesScenarioOutlineDataTable.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/FeatureFiles/_11_EntranceExam.feature" />
       <option name="GLUE" value="StepDefinitions" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="Cucumber" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: _10_FeesScenarioOutlineDataTable" />
+      <option name="SUGGESTED_NAME" value="Feature: _11_EntranceExam" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -134,26 +132,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Create a country" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/FeatureFiles/_09_DataTable.feature" />
-      <option name="GLUE" value="StepDefinitions" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="Cucumber" />
-      <option name="NAME_FILTER" value="^Create a country$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Create a country$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Create a country" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Scenario: Fees Functionality" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/FeatureFiles/_09_DataTable.feature" />
@@ -174,13 +152,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="_01_TestRunner" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Cucumber" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Runners.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Runners" />
+      <option name="MAIN_CLASS_NAME" value="Runners._01_TestRunner" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Feature: _11_EntranceExam" />
+        <item itemvalue="TestNG._01_TestRunner" />
         <item itemvalue="Cucumber Java.Feature: _10_FeesScenarioOutlineDataTable" />
         <item itemvalue="Cucumber Java.Scenario: Fees Functionality" />
         <item itemvalue="Cucumber Java.Scenario: Create a Nationality" />
-        <item itemvalue="Cucumber Java.Scenario: Create a country" />
-        <item itemvalue="Cucumber Java.Feature: _09_DataTable" />
       </list>
     </recent_temporary>
   </component>
@@ -241,7 +236,15 @@
       <option name="project" value="LOCAL" />
       <updated>1694722265331</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="updates">
+      <option name="closed" value="true" />
+      <created>1695154109171</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1695154109171</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

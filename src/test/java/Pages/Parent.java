@@ -28,6 +28,7 @@ public class Parent {
          */
 
         wait.until(ExpectedConditions.elementToBeClickable(element));
+        scrollToElement(element);
         element.click();
 
     }
@@ -42,12 +43,13 @@ public class Parent {
          */
 
         wait.until(ExpectedConditions.visibilityOf(element));
+        scrollToElement(element);
         element.clear();
         element.sendKeys(yazi);
 
     }
 
-    public void ScrollIntoElement (WebElement element){
+    public void scrollToElement (WebElement element){
 
         JavascriptExecutor js = (JavascriptExecutor) GWD.getDriver();
         js.executeScript("arguments[0].scrollIntoView(true);", element);
@@ -61,6 +63,13 @@ public class Parent {
         //Actions ile ESC ye basarak çýkan mesajý kapatarak çözdük.
         new Actions(GWD.getDriver()).sendKeys(Keys.ESCAPE).build().perform();
 
+    }
+
+    public void myJsClick(WebElement element) {
+        wait.until(ExpectedConditions.elementToBeClickable(element));
+        scrollToElement(element);
+        JavascriptExecutor js = (JavascriptExecutor) GWD.getDriver();
+        js.executeScript("arguments[0].click();", element);
     }
 
 }

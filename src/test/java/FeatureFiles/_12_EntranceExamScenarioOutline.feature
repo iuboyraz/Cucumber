@@ -1,5 +1,5 @@
 #Senaryo :
-#  Bir önceki Exam Giriþ Senaryosunu
+#  Bir önceki Entrance Exams Giriþ Senaryosunu
 #  Aþaðýdaki deðerler için çalýþtýrýnýz.
 #
 #| ExamName        | AcademicPeriodOption         | GradeLevelOption |
