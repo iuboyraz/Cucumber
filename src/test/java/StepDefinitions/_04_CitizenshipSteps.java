@@ -24,7 +24,6 @@ public class _04_CitizenshipSteps {
         ln.myClick(ln.setup);
         ln.myClick(ln.parameters);
         ln.myClick(ln.citizenships);
-
     }
 
     @When("Create a citizenship")
@@ -37,7 +36,10 @@ public class _04_CitizenshipSteps {
         dc.mySendKeys(dc.shortName, citizenshipShortCode);
         dc.myClick(dc.saveButton);
     }
-
+    /*
+     _05_CitizenshipParameter.feature dosyasýnda Background ve scenarios oluþturduk.
+     1. scenario da name as "" ve code as "" yapýsýný kullandýk.
+    */
     @When("Create a citizenship name as {string} shortname as {string}")
     public void createACitizenshipNameAsShortnameAs(String name, String shortName) {
         dc.myClick(dc.addButton);
@@ -46,11 +48,13 @@ public class _04_CitizenshipSteps {
         dc.myClick(dc.saveButton);
     }
 
+     //_05_CitizenshipParameter.feature dosyasýnda 2. scenario da "already" mesajýný verify ettik.
     @Then("Already exist message should be displayed")
     public void alreadyExistMessageShouldBeDisplayed() {
         dc.verifyContainsText(dc.alreadyExist, "already");
     }
-
+    //_06_ScenarioOutlineCitizenship.feature de parametre ile oluþturduðumuz kayýtlarý
+    //_07_CitizenshipDelete.feature dosyasýnda yine parametre ile sildik.
     @When("User delete the name {string}")
     public void deleteACitizenshipNameAs(String name) throws InterruptedException {
         dc.deleteItem(name);

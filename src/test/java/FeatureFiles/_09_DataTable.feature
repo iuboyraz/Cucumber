@@ -30,9 +30,9 @@ Feature: DataTable Functionality
 
   Scenario: Create a Nationality
     And Click on the element in the LeftNav
-  | setup      |
-  | parameters |
-  | nationalities  |
+      | setup         |
+      | parameters    |
+      | nationalities |
 
     And Click on the element in the DialogContent
       | addButton |
@@ -54,19 +54,19 @@ Feature: DataTable Functionality
     And Click on the element in the LeftNav
       | setup      |
       | parameters |
-      | fees  |
+      | fees       |
 
     And Click on the element in the DialogContent
       | addButton |
 
     And User sends the keys into the DialogBox
       | nameInput       | Ali Cabbar fee1 |
-      | codeInput       | cabbar59 |
-      | integrationCode | acb59 |
-      | priorityCode    | 1111 |
+      | codeInput       | cabbar59        |
+      | integrationCode | acb59           |
+      | priorityCode    | 1111            |
 
     And Click on the element in the DialogContent
-      | toggleBar |
+      | toggleBar  |
       | saveButton |
 
     Then Success message should be displayed

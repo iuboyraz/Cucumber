@@ -6,7 +6,7 @@
 #Daha sonra ayný bilgilerle tekrar Create yapýlamadýðýný doðrulayýnýz. (negatif test)
 #yukarýdaki senaryoyu farklý 5 deðer için çalýþtýrýnýz
 
-Feature: Citizenship Functionality
+Feature: Citizenship Functionality using scenario outline (example)
 
   Background: # runs before each scenario
 

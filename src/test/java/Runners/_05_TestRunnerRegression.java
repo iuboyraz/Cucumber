@@ -7,7 +7,7 @@ import io.cucumber.testng.CucumberOptions;
 
         tags = "@SmokeTest or @Regression", // @SmokeTest and @Regression da kullanýlabilir.
         features = {"src/test/java/FeatureFiles"},//klasördeki bütün featurelar
-        glue={"StepDefinitions"}
+        glue = {"StepDefinitions"}
 )
 
 public class _05_TestRunnerRegression extends AbstractTestNGCucumberTests {

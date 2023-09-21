@@ -22,25 +22,23 @@ public class _08_DataTableOrnek {
     public void writeUsernameAsDataTable(DataTable usernames) {
         List<String> listUsernames = usernames.asList(String.class);
 
-        for (String user : listUsernames){
+        for (String user : listUsernames) {
             System.out.println("user = " + user);
-
             /*
             testNG de "dataProvider" / cucumber da "scenario outline" ayný iþleve sahiptir.
             Gönderilen her bir deðer için tüm senaryo çalýþýr.
             DataTable ise bir stepe (tüm senaryoyu çalýþtýrmadan) parametreyi göndermemizi saðlýyor.
              */
-
         }
     }
 
     @And("Write username an password as DataTable")
     public void writeUsernameAnPasswordAsDataTable(DataTable usernamesAndPasswords) {
-      List<List<String>> listUsernamesAndPasswords =   usernamesAndPasswords.asLists(String.class);
+        List<List<String>> listUsernamesAndPasswords = usernamesAndPasswords.asLists(String.class);
 
         for (int i = 0; i < listUsernamesAndPasswords.size(); i++) {
-            System.out.println("listUsernamesAndPasswords = " + listUsernamesAndPasswords.get(i).get(0)+" "+ // username
-                                                                listUsernamesAndPasswords.get(i).get(1));    // password
+            System.out.println("listUsernamesAndPasswords = " + listUsernamesAndPasswords.get(i).get(0) + " " + // username
+                    listUsernamesAndPasswords.get(i).get(1));    // password
         }
     }
 }

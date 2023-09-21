@@ -3,7 +3,7 @@
 #Create iþlemini parameter yöntemi ile doðrulayýnýz.
 #Daha sonra ayný bilgilerle tekrar create yapýlamadýðýný doðrulayýnýz. (negatif test)
 
-Feature: Citizenship Functionality
+Feature: Citizenship Functionality using parameter
 
   Background: # runs before each scenario
 

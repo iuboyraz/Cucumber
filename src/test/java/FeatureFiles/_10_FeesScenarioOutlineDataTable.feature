@@ -39,6 +39,6 @@ Feature: Fees multiple values functionality
       | name           | code | intcode  | priority |
       | AliCabbarFee01 | 1111 | PayPal   | 1111     |
       | AliCabbarFee02 | 1112 | Cash     | 1111     |
-      | AliCabbarFee03 | 1113 | Checque  | 1111     |
+      | AliCabbarFee03 | 1113 | Cheque   | 1111     |
       | AliCabbarFee04 | 1114 | ApplePay | 1111     |
       | AliCabbarFee05 | 1115 | Crypto   | 1111     |

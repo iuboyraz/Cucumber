@@ -32,6 +32,9 @@ public class _02_CountrySteps {
         ülke kodunu gir
         save tuþuna bas
          */
+
+        // Random ülke adý ve codu üretme iþlemi
+        // Bunun için pom.xml'e org.apache.commons eklendi.
         String ulkeAdi = RandomStringUtils.randomAlphanumeric(8);//8 harf
         String ulkeKodu = RandomStringUtils.randomNumeric(4); // 4 rakam
 
@@ -43,14 +46,12 @@ public class _02_CountrySteps {
 
     @Then("Success message should be displayed")
     public void successMessageShouldBeDisplayed() {
-        /*
-        success yazýsý çýktý mý kontrol et.
-         */
+        //success yazýsý çýktý mý kontrol et.
         dc.verifyContainsText(dc.successMessage, "success");
     }
     /*
      _03_CountryMultipleScenarios.feature dosyasýnda Background ve scenarios oluþturduk.
-     2. scenario da name as "" ve code as "" kullandýk.
+     2. scenario da name as "" ve code as "" yapýsýný kullandýk.
     */
     @When("Create a country name as {string} code as {string}")
     public void createACountryNameAsCodeAs(String name, String code) {

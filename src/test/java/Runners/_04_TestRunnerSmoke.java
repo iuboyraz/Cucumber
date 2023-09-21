@@ -5,7 +5,7 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
         // aþaðýdaki testlerde smoke olanlarý çalýþtýr.
-        tags = "@SmokeTest", //@Regression da denilebilir. Ýlgili FeatureFiles da gerekli annotation verilir.
+        tags = "@SmokeTest", //@Regression da denilebilir. Ýlgili FeatureFiles ta da gerekli annotation verilir.
         features = {"src/test/java/FeatureFiles"},//klasördeki bütün featurelar
         glue={"StepDefinitions"}
 )
