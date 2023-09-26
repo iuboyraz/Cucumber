@@ -12,7 +12,7 @@ Feature: DataTable Ornek
     |ali|
     |veli|
 
-    And Write username an password as DataTable
+    And Write username and password as DataTable
       |ismet  | 1234 |
       |mehmet | 23323|
       |ayse   | 45454|

@@ -32,8 +32,8 @@ public class _08_DataTableOrnek {
         }
     }
 
-    @And("Write username an password as DataTable")
-    public void writeUsernameAnPasswordAsDataTable(DataTable usernamesAndPasswords) {
+    @And("Write username and password as DataTable")
+    public void writeUsernameAndPasswordAsDataTable(DataTable usernamesAndPasswords) {
         List<List<String>> listUsernamesAndPasswords = usernamesAndPasswords.asLists(String.class);
 
         for (int i = 0; i < listUsernamesAndPasswords.size(); i++) {

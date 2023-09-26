@@ -9,7 +9,6 @@ import org.openqa.selenium.WebElement;
 
 import java.util.List;
 
-
 public class _09_DataTableSteps {
 
     LeftNav ln = new LeftNav();

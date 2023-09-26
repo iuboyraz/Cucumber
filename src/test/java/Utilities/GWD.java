@@ -2,12 +2,20 @@ package Utilities;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.safari.SafariDriver;
 
 import java.time.Duration;
 import java.util.Locale;
 
 public class GWD {
-    private static WebDriver driver;
+
+    private static ThreadLocal<WebDriver> threadDriver = new ThreadLocal<>();
+    //threadDriver.get()  -> bulunduðum thread deki driver'ý al
+    //threadDriver.set(driver)  -> bulunduðum thread'e driver'ý ver
+
+    public static ThreadLocal<String> threadBrowserName = new ThreadLocal<>();
 
     public static WebDriver getDriver() {
 
@@ -15,12 +23,31 @@ public class GWD {
         Locale.setDefault(new Locale("EN"));
         System.setProperty("user.language", "EN");
 
-        if (driver == null) {
-            driver = new ChromeDriver();
-            driver.manage().window().maximize();
-            driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
+        // Bu if code xmlden çalýþtýrma yapýlmadýðýnda yani runnerslardan çalýþtýrýldýðýnda çalýþacak.
+        // Bu if code alttaki if code a eklenmedi çünkü null deðer geldiðinde switch onu görüp default deðere yönlendirmiyor.
+        if (threadBrowserName.get() == null)  // eðer driver boþ ise 1 kere çalýþsýn.
+            threadBrowserName.set("chrome");// ve driver chromeDriver olsun
+
+        // gelen browser ismine göre firefox, edge, safari, chrome, browser switch ile set ediliyor.
+        if (threadDriver.get() == null) {// eðer driver boþ ise 1 kere çalýþsýn.
+            switch (threadBrowserName.get()) {
+                case "firefox":// ilgili thread/pipe'e (runnerstan gelen browser isteðine) bir FirefoxDriver'ý set ettim.
+                    threadDriver.set(new FirefoxDriver());
+                    break;
+                case "edge":
+                    threadDriver.set(new EdgeDriver());
+                    break;
+                case "safari":
+                    threadDriver.set(new SafariDriver());
+                    break;
+                default:
+                    // ilgili thread/pipe'e (runnerstan browser isteði gelmezse) bir default olarak ChromeDriver'ý set ettim.
+                    threadDriver.set(new ChromeDriver());
+            }
         }
-        return driver;
+        threadDriver.get().manage().window().maximize();
+        threadDriver.get().manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
+        return threadDriver.get();// bulunduðum thread (pipe)'için driver al.
     }
 
     public static void quitDriver() {
@@ -30,9 +57,13 @@ public class GWD {
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
-        if (driver != null) { // driver var ise
-            driver.quit();
-            driver = null;
+        if (threadDriver.get() != null) { // driver var ise
+            threadDriver.get().quit();
+
+            WebDriver driver = threadDriver.get(); // direkt eþitleme yapamadýðým için içindekini al
+            driver = null;// null'a eþitle
+
+            threadDriver.set(driver);// kendisine null olarak ver böylece bu thread/pipe ta dolu bir driver kalmadý.
         }
     }
 }
