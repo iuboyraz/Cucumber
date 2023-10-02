@@ -55,13 +55,15 @@ public class Parent {
 
         wait.until(ExpectedConditions.textToBePresentInElement(element,value));
         Assert.assertTrue(element.getText().toLowerCase().contains(value.toLowerCase()));
-        //Programý çalýþtýrdýðýmýzda silmede çýkan mesaj (dialog kutusu) Unable to locate element hatasý oluþturuyor.
+        //Programý çalýþtýrdýðýmýzda silmede çýkan mesaj (dialog kutusu)
+        //bir sonraki aramada locator'ý bulmada stale element not found/Unable to locate element hatasý oluþturuyor.
         //Actions ile ESC ye basarak çýkan mesajý kapatarak çözdük.
         new Actions(GWD.getDriver()).sendKeys(Keys.ESCAPE).build().perform();
 
     }
 
     public void myJsClick(WebElement element) {
+
         wait.until(ExpectedConditions.elementToBeClickable(element));
         scrollToElement(element);
         JavascriptExecutor js = (JavascriptExecutor) GWD.getDriver();

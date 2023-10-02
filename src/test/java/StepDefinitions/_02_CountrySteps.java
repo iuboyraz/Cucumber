@@ -45,7 +45,7 @@ public class _02_CountrySteps {
     }
 
     @Then("Success message should be displayed")
-    public void successMessageShouldBeDisplayed() {
+    public void successMessageShouldBeDisplayed(){
         //success yazýsý çýktý mý kontrol et.
         dc.verifyContainsText(dc.successMessage, "success");
     }

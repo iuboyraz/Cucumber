@@ -101,9 +101,9 @@ public class DialogContent extends Parent{
         return null;
     }
 
-    public void deleteItem(String searchText){
+    public void deleteItem(String searchText) {
         mySendKeys(searchInput,searchText);
-        myClick(searchButton);
+        myJsClick(searchButton);
         /*
         1. Yöntem:
          Programý çalýþtýrdýðýmýzda search iþleminden sonra ekran yenilendiði için
@@ -120,10 +120,12 @@ public class DialogContent extends Parent{
         fuse-progress-bar/*    -> fuse-progress-bar ýn çocuklarý demek
         bu çocuklarýn sayýsý 0 olana kadar bekle.
         */
-        wait.until(ExpectedConditions.numberOfElementsToBe(By.xpath("//fuse-progress-bar/*"),0));
 
-        myClick(deleteImageButton);
-        myClick(deleteDialogButton);
+        //wait.until(ExpectedConditions.numberOfElementsToBe(By.xpath("//fuse-progress-bar/*"),0));
+
+        myJsClick(deleteImageButton);
+        myJsClick(deleteDialogButton);
+
     }
 
 }

@@ -50,7 +50,7 @@ public class _04_CitizenshipSteps {
     //_06_ScenarioOutlineCitizenship.feature de parametre ile oluþturduðumuz kayýtlarý
     //_07_CitizenshipDelete.feature dosyasýnda yine parametre ile sildik.
     @When("User delete the name {string}")
-    public void deleteACitizenshipNameAs(String name) throws InterruptedException {
+    public void deleteACitizenshipNameAs(String name) {
         dc.deleteItem(name);
     }
 }

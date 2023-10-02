@@ -5,11 +5,19 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
 import java.util.Locale;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class GWD_Old {
     private static WebDriver driver;
 
     public static WebDriver getDriver() {
+
+        Logger logger = Logger.getLogger("");
+        // output yapýlan loglarý al,
+        logger.setLevel(Level.SEVERE);
+        // sadece ERRORLARI göster. Yani hata seviyesi YÜKSEK olanlarý göster.
+        // Böylece chrome vb browser güncelleme eksikliklerinin hatalarýný run kýsmýnda göstermeyecek.
 
         // extend report'un türkçe bilgisayarlarda çalýþmamasý nedeniyle eklendi.
         Locale.setDefault(new Locale("EN"));

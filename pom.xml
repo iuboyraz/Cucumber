@@ -88,6 +88,22 @@
             <artifactId>extentreports-cucumber7-adapter</artifactId>
             <version>1.9.2</version> <!--1.9.2--> <!--https://www.programsbuzz.com/article/cucumber-testng-generate-extent-report-using-extent-adapter-grasshopper-->
         </dependency>
+
+        <!-- Following 2 dependencies are added for excel processes -->
+        <!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>4.1.0</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>4.1.0</version>
+        </dependency>
+
     </dependencies>
 
 

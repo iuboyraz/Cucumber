@@ -5,27 +5,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8982d521-96b2-4787-b4e4-1f97b7dfca43" name="Changes" comment="updates">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Runners/_08_ParallelTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Utilities/GWD_Old.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/XML/ParallelTesting.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/Test_Noktalari.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ApachePOI/ExcelFiles/ApacheExcel2.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ApachePOI/ExcelFiles/CarpimTablosu.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ApachePOI/ExcelFiles/LoginData.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ApachePOI/ExcelFiles/WriteInTheExcelFile.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ApachePOI/_01_2DArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ApachePOI/_03_ApacheiPOIStart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ApachePOI/_04_ApachePOIGetAllData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ApachePOI/_05_GetASpecificDataBen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ApachePOI/_05_GetASpecificDataHoca.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ApachePOI/_06_WriteInTheExcel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ApachePOI/_07_Soru1_MevcutExcel_Carpim_Tablosu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ApachePOI/_08_NewExcelWrite.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ApachePOI/_09_Soru2_YeniExcel_Carpim_Tablosu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ApachePOI/_10_Soru3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ApachePOI/_11_Soru4_MevcutExcel_SutunToList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ApachePOI/_12_Soru5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/FeatureFiles/_13_ApachePOICitizenship.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/StepDefinitions/_13_ApachePOICitizenshipSteps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Utilities/ExcelUtility.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/FeatureFiles/_08_DataTableOrnek.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FeatureFiles/_08_DataTableOrnek.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/FeatureFiles/_12_EntranceExamScenarioOutline.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FeatureFiles/_12_EntranceExamScenarioOutline.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Pages/DialogContent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/DialogContent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Pages/Parent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/Parent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/StepDefinitions/_01_LoginSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefinitions/_01_LoginSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/StepDefinitions/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefinitions/Hooks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/StepDefinitions/_02_CountrySteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefinitions/_02_CountrySteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/StepDefinitions/_04_CitizenshipSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefinitions/_04_CitizenshipSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/StepDefinitions/_08_DataTableOrnek.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefinitions/_08_DataTableOrnek.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/StepDefinitions/_09_DataTableSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefinitions/_09_DataTableSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Utilities/GWD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utilities/GWD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/_cucumbersetup/CucumberConfiguration.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/_cucumbersetup/CucumberConfiguration.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/_cucumbersetup/setUp01.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/_cucumbersetup/setUp01.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/_cucumbersetup/setUp02.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/_cucumbersetup/setUp02.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/_cucumbersetup/setUp03.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/_cucumbersetup/setUp03.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/_cucumbersetup/setUp04.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/_cucumbersetup/setUp04.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/extent.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/extent.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Utilities/GWD_Old.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utilities/GWD_Old.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,19 +70,23 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "ignore.virus.scanning.warn.message": "true",
     "last_directory_selection": "C:/JavaLessons/Bootcamp/Cucumber/src/test/java/StepDefinitions",
-    "last_opened_file_path": "C:/JavaLessons/Bootcamp/cleverppcCucumber",
+    "last_opened_file_path": "C:/JavaLessons/Bootcamp/paraTestar",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "File.Encoding"
+    "settings.editor.selected.configurable": "inlay.hints"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\JavaLessons\Bootcamp\Cucumber\src\test\java\ApachePOI\ExcelFiles" />
+      <recent name="C:\JavaLessons\Bootcamp\Cucumber\src\test\java\ApachePOI\resource" />
       <recent name="C:\JavaLessons\Bootcamp\Cucumber\src\test\resources" />
       <recent name="C:\JavaLessons\Bootcamp\Cucumber\src\test\java\XML" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\JavaLessons\Bootcamp\Cucumber\src\test\java\ApachePOI\resource\ExcelFiles" />
+      <recent name="C:\JavaLessons\Bootcamp\Cucumber\src\test\java\ApachePOI\resource" />
       <recent name="C:\JavaLessons\Bootcamp\Cucumber\src\test\java\StepDefinitions" />
       <recent name="C:\JavaLessons\Bootcamp\Cucumber\src\test\java\_cucumbersetup" />
     </key>
@@ -83,19 +94,73 @@
       <recent name="StepDefinitions" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ApachePOI" />
+      <recent name="ApachePOI.resource" />
       <recent name="Runners" />
       <recent name="Utilities" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/JavaLessons/Bootcamp/Cucumber/src/test/java/XML/ParallelTesting.xml">
-    <configuration name="Feature: _11_EntranceExam" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Cucumber Java.Feature: _13_ApachePOICitizenship">
+    <configuration name="_08_NewExcelWrite" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ApachePOI._08_NewExcelWrite" />
+      <module name="Cucumber" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ApachePOI.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_09_Soru2_YeniExcel_Carpim_Tablosu" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ApachePOI._09_Soru2_YeniExcel_Carpim_Tablosu" />
+      <module name="Cucumber" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ApachePOI.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_11_Soru4_MevcutExcel_SutunToList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ApachePOI._11_Soru4_MevcutExcel_SutunToList" />
+      <module name="Cucumber" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ApachePOI.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_12_Soru5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ApachePOI._12_Soru5" />
+      <module name="Cucumber" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ApachePOI.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Feature: _13_ApachePOICitizenship" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/FeatureFiles/_11_EntranceExam.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/FeatureFiles/_13_ApachePOICitizenship.feature" />
       <option name="GLUE" value="StepDefinitions" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="Cucumber" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: _11_EntranceExam" />
+      <option name="SUGGESTED_NAME" value="Feature: _13_ApachePOICitizenship" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -103,80 +168,17 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Feature: _12_EntranceExamScenarioOutline" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/FeatureFiles/_12_EntranceExamScenarioOutline.feature" />
-      <option name="GLUE" value="StepDefinitions" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="Cucumber" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: _12_EntranceExamScenarioOutline" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="C:/JavaLessons/Bootcamp/Cucumber/src/test/java/XML/ParallelTesting.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Cucumber" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/java/XML/ParallelTesting.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="_06_TestRunnerSmokeWithPlugin" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Cucumber" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Runners.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Runners" />
-      <option name="MAIN_CLASS_NAME" value="Runners._06_TestRunnerSmokeWithPlugin" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="_07_TestRunnerExtentReport" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Cucumber" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Runners.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Runners" />
-      <option name="MAIN_CLASS_NAME" value="Runners._07_TestRunnerExtentReport" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.C:/JavaLessons/Bootcamp/Cucumber/src/test/java/XML/ParallelTesting.xml" />
-        <item itemvalue="Cucumber Java.Feature: _12_EntranceExamScenarioOutline" />
-        <item itemvalue="TestNG._07_TestRunnerExtentReport" />
-        <item itemvalue="TestNG._06_TestRunnerSmokeWithPlugin" />
-        <item itemvalue="Cucumber Java.Feature: _11_EntranceExam" />
+        <item itemvalue="Cucumber Java.Feature: _13_ApachePOICitizenship" />
+        <item itemvalue="Application._12_Soru5" />
+        <item itemvalue="Application._11_Soru4_MevcutExcel_SutunToList" />
+        <item itemvalue="Application._09_Soru2_YeniExcel_Carpim_Tablosu" />
+        <item itemvalue="Application._08_NewExcelWrite" />
       </list>
     </recent_temporary>
   </component>
@@ -261,7 +263,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695323220202</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="updates">
+      <option name="closed" value="true" />
+      <created>1695716112399</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1695716112399</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

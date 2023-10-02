@@ -8,6 +8,8 @@ import org.openqa.selenium.safari.SafariDriver;
 
 import java.time.Duration;
 import java.util.Locale;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class GWD {
 
@@ -18,6 +20,12 @@ public class GWD {
     public static ThreadLocal<String> threadBrowserName = new ThreadLocal<>();
 
     public static WebDriver getDriver() {
+
+        Logger logger = Logger.getLogger("");
+        // output yapýlan loglarý al,
+        logger.setLevel(Level.SEVERE);
+        // sadece ERRORLARI göster. Yani hata seviyesi YÜKSEK olanlarý göster.
+        // Böylece chrome vb browser güncelleme eksikliklerinin hatalarýný run kýsmýnda göstermeyecek.
 
         // extend report'un türkçe bilgisayarlarda çalýþmamasý nedeniyle eklendi.
         Locale.setDefault(new Locale("EN"));

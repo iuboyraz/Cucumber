@@ -1,5 +1,6 @@
 package StepDefinitions;
 
+import Utilities.ExcelUtility;
 import Utilities.GWD;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
@@ -14,8 +15,10 @@ public class Hooks {
         // System.out.println("Senaryo baþladý mý?");
     }
 
-    @After
+    @After // cucumber'ýn annotation'ý
     public void after(Scenario scenario) {
+        ExcelUtility.writeToExcel("src/test/java/ApachePOI/ExcelFiles/SenaryoSonuclari3.xlsx",
+                scenario);
 
         // runner dosyasýnda "plugin" varsa aþaðýdaki kod blok AÇIK kalsýn.
         // Ör: _06_TestRunnerSmokeWithPlugin ve _07_TestRunnerExtentReport
