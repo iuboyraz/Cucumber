@@ -10,7 +10,7 @@ import org.openqa.selenium.TakesScreenshot;
 
 public class Hooks {
 
-    @Before // cucumber'in annotation'i
+    @Before // cucumber'ýn annotation'ý
     public void before() {
         // System.out.println("Senaryo baþladý mý?");
     }

@@ -9,10 +9,11 @@ import io.cucumber.testng.CucumberOptions;
         tags = "@SmokeTest",
         features = {"src/test/java/FeatureFiles"},
         glue = {"StepDefinitions"},
-        dryRun = false, // default deðeri false. Eðer direkt testleri çalýþtýracaksan dryRun'ý kullanmana gerek yok.
+        dryRun = false, // default deðeri false. Eðer testleri direkt çalýþtýracaksan dryRun'ý kullanmana gerek yok.
         // true olduðunda çalýþtýrmadan testlerin stepleri (gerekli dosyalarý) var mý? diye kontrol eder.
         // false olduðunda ise testi çalýþtýrýr.
-        plugin= {"html:target/site/cucumber-pretty.html"}  //Basit rapor
+        plugin= {"html:target/site/cucumber-pretty.html"}
+        // Basit rapor
         // Rapor cinsi: html, pdf, json vs. olabilir.
         // Dosya yolu ve adý: target/site/cucumber-pretty.html
 )

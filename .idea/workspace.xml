@@ -5,34 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8982d521-96b2-4787-b4e4-1f97b7dfca43" name="Changes" comment="updates">
-      <change afterPath="$PROJECT_DIR$/src/test/java/ApachePOI/ExcelFiles/ApacheExcel2.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ApachePOI/ExcelFiles/CarpimTablosu.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ApachePOI/ExcelFiles/LoginData.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ApachePOI/ExcelFiles/WriteInTheExcelFile.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ApachePOI/_01_2DArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ApachePOI/_03_ApacheiPOIStart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ApachePOI/_04_ApachePOIGetAllData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ApachePOI/_05_GetASpecificDataBen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ApachePOI/_05_GetASpecificDataHoca.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ApachePOI/_06_WriteInTheExcel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ApachePOI/_07_Soru1_MevcutExcel_Carpim_Tablosu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ApachePOI/_08_NewExcelWrite.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ApachePOI/_09_Soru2_YeniExcel_Carpim_Tablosu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ApachePOI/_10_Soru3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ApachePOI/_11_Soru4_MevcutExcel_SutunToList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ApachePOI/_12_Soru5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/FeatureFiles/_13_ApachePOICitizenship.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/StepDefinitions/_13_ApachePOICitizenshipSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Utilities/ExcelUtility.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/DialogContent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/DialogContent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/Parent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/Parent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Runners/_06_TestRunnerSmokeWithPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Runners/_06_TestRunnerSmokeWithPlugin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/StepDefinitions/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefinitions/Hooks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/StepDefinitions/_02_CountrySteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefinitions/_02_CountrySteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/StepDefinitions/_04_CitizenshipSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefinitions/_04_CitizenshipSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Utilities/GWD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utilities/GWD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Utilities/GWD_Old.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utilities/GWD_Old.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +45,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "ignore.virus.scanning.warn.message": "true",
     "last_directory_selection": "C:/JavaLessons/Bootcamp/Cucumber/src/test/java/StepDefinitions",
-    "last_opened_file_path": "C:/JavaLessons/Bootcamp/paraTestar",
+    "last_opened_file_path": "C:/JavaLessons/Bootcamp/Cucumber",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
@@ -271,7 +246,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695716112399</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="updates">
+      <option name="closed" value="true" />
+      <created>1696250049310</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1696250049310</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
