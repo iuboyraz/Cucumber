@@ -2,7 +2,7 @@ package ApachePOI;
 
 /*
    Main den bir metod çaðýrmak suretiyle, path i ve sheetName i verilen excelden
-   istenilen sütun kadar veriyi okuyup bir ArrayList e atýp yazdýrýnýz.
+   istenilen sütun kadar veriyi okuyarak bir ArrayList e atýp yazdýrýnýz.
    Bu soruda kaynak Excel için : ApacheExcel2.xlsx  in 2.sheet ini kullanabilirsiniz.
  */
 

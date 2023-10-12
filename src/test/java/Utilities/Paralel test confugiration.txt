@@ -1,0 +1,26 @@
+Paralel test çalýþma sürecinde her bir test ayný anda çalýþan ayrý boru hatlarý gibi çalýþýr.
+Ayrý çalýþan bu her bir boru hattýna yazýlým dilinde pipeline/thread denir.
+
+Ör: Thread.Sleep(5000) -> Bulunduðum boru hattýný ..... süre beklet demek.
+
+Normalde her driver'ý çaðýran test yeni bir driver baþlatýr.
+Ama cucumberda testler çalýþýrken tek driver'ýn çalýþmasý gerekiyor.
+Yani driver static olmak zorunda
+
+Ama biz paralel test çalýþtýrmak istiyoruz.
+Dolayýsýyla cucumberda bize hem static olacak hemde her boru hattýna özel olacak driver gerekli.
+
+Ýþte bu thread static yani boru hattýna özel driver -> thread local static
+Ör: static  ThreadLocal<WebDriver> -> Thread in Local static WebDriver'ý
+
+Bizde cucumberda paralel test çalýþtýrmak için;
+
+1- XML dosyasý ekledik.
+2- Runners klasöründeki _08_ParallelTest dosyasýnda düzenlemeler yaptýk.
+3- GWD de düzenlemeler yaptýk.
+
+Böylece driverý paralel çalýþacak hale getirdik.
+
+Böylece her boru hattýnýn ayrý bir driver'ý oldu.
+
+

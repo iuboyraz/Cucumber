@@ -1,0 +1,94 @@
+ExtendReport Islemleri
+https://www.programsbuzz.com
+https://www.programsbuzz.com/article/cucumber-testng-generate-extent-report-using-extent-adapter-grasshopper
+
+1- POM a ilgili dependency eklenir.
+(Add following dependency to your pom.xml. You can download the latest one from
+https://mvnrepository.com/artifact/tech.grasshopper/extentreports-cucumber7-adapter)
+
+        <dependency>
+            <groupId>tech.grasshopper</groupId>
+            <artifactId>extentreports-cucumber7-adapter</artifactId>
+            <version>1.9.2</version> <!--1.9.2--> <!--https://www.programsbuzz.com/article/cucumber-testng-generate-extent-report-using-extent-adapter-grasshopper-->
+        </dependency>
+
+2- Runner class'a plugin eklenir.
+(Add adapter as a Plugin to your Cucumber Options:)
+
+plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
+
+3- extent.properties dosyasý resources klasörünün altýna açýlarak aþaðýdaki kod satýrý eklenir.
+(Add extent.properties to src/resources/test with below 2 lines)
+
+extent.reporter.spark.start=true
+extent.reporter.spark.out=test-output/SparkReport/Spark.html
+
+4- Türkçe bilgisayarlardaki karakter sorununu çözmek için aþaðýdaki kod Utilities/GWD içerisinde public static WebDriver getDriver(){}
+metodunun içerisine yapýþtýrýlýr.
+
+    Locale.setDefault(new Locale("EN"));
+    System.setProperty("user.language", "EN");
+
+5- Runner dosyasý çalýþtýrýlýr.-> tek bir rapor oluþturur.
+(Execute your Runner File)
+
+6- Runner dosyasý her çalýþtýrýldýðýnda yeni bir rapor üretilmesi istenirse
+aþaðýdaki kod extent.properties'e eklenir.
+
+    #FolderName
+    basefolder.name=Test Reports/TestReport
+    basefolder.datetimepattern=d-MMM-YY HH.mm.ss
+
+7- Runner dosyasý çalýþtýrýlýr.
+(Execute your Runner File)
+
+8- Rapora screenshot eklenmek istenirse
+(Adding screenshot into the report)
+https://www.programsbuzz.com/article/how-add-screenshot-cucumber-extent-report-every-step
+https://qaautomation.expert/2022/08/10/how-to-add-screenshot-to-cucumber-extentreports/
+
+    a)Hooks klasöründe @After annotation'in ait olduðu method içerisine
+    aþaðýdaki if kod bloku eklenir.
+
+    if (scenario.isFailed()) {
+                TakesScreenshot ts = ((TakesScreenshot) GWD.getDriver());
+                byte[] inMemory = ts.getScreenshotAs(OutputType.BYTES); // Baþka bir dosyaya ekleyebilmek için tip byte seçildi.
+                //https://www.programsbuzz.com/article/how-add-screenshot-cucumber-extent-report-every-step den aldýk.
+                // GenericFunctions.getByteScreenshot() -> inMemory ile deðiþtirildi.
+                scenario.attach(inMemory, "image/png", "screenshot name");
+            }
+
+    b) extent.properties e aþaðýdaki kod satýrlarý eklenir.
+
+    #screenshot folder and src settings
+    screenshot.dir=test-output/screenshots/
+    screenshot.rel.path=../screenshots/
+
+9- PDF Report için yapýlacak iþlemler
+(Add below 2 lines in extent.properties file)
+https://www.programsbuzz.com/article/extent-pdf-report-cucumber-testng
+
+    #pdf Report
+    extent.reporter.pdf.start=true
+    extent.reporter.pdf.out=test-output/PdfReport/ExtentPdf.pdf
+
+10- extent report'a ek bilgiler eklemek için igili TesrRunner class'ýna aþaðýdaki metod yazýlýr.
+
+public class _07_TestRunnerExtentReport extends AbstractTestNGCucumberTests {
+// extent report'a ek bilgiler eklemek için aþaðýdaki kod satýrý eklendi.
+//Ornek:Test Reports/TestReport 21-Eyl-23 21.49.33/test-output/SparkReport/Spark.html dosyasý tiklanarak rapor görülebilir.
+
+    @AfterClass
+    public  static void writeExtentReport(){
+        ExtentService.getInstance().setSystemInfo("Windows User Name",System.getProperty("user.name")); // username : Umit Boyraz
+        ExtentService.getInstance().setSystemInfo("Time Zone", System.getProperty("user.timezone"));
+        ExtentService.getInstance().setSystemInfo("User Name", "Umit Boyraz");
+        ExtentService.getInstance().setSystemInfo("Application Name", "Campus");
+        ExtentService.getInstance().setSystemInfo("Operating System Info", System.getProperty("os.name"));
+        ExtentService.getInstance().setSystemInfo("Department", "QA");
+        ExtentService.getInstance().setSystemInfo("Ek Satýr", "Açýklama");
+        ExtentService.getInstance().setSystemInfo("Ek Satýr", "Açýklama");
+        ExtentService.getInstance().setSystemInfo("Ek Satýr", "Açýklama");
+        ExtentService.getInstance().setSystemInfo("Ek Satýr", "Açýklama");
+    }
+}

@@ -22,7 +22,7 @@ public class _10_Soru3 {
     public static void main(String[] args) throws IOException {
         //Hafýzada yeni dosya oluþturma iþlemlerini yap------------------------------------------------------------------------------------//
 
-        // hafýzada worbook ve içinde sheet oluþtur.
+        // hafýzada workbook ve içinde sheet oluþtur.
         XSSFWorkbook workbook = new XSSFWorkbook();
         XSSFSheet sheet = workbook.createSheet("Sayfa1");// sheet'e isim ver.
 

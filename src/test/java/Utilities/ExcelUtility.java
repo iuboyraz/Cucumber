@@ -57,12 +57,13 @@ public class ExcelUtility {
 
             // hafýzadaki sheet te yeni bir satýr oluþtur
             Row yeniSatir = sheet.createRow(0);
-
             Cell hucre = yeniSatir.createCell(0);
-            hucre.setCellValue(scenario.getName()); // hücreye çalýþan senaryonun adýný set et.
+            hucre.setCellValue(scenario.getName()); // 0.hücreye çalýþan senaryonun adýný set et.
 
             Cell hucre2 = yeniSatir.createCell(1);
-            hucre2.setCellValue(scenario.getStatus().toString()); // hücreye çalýþan senaryonun sonucunu set et.
+            hucre2.setCellValue(scenario.getStatus().toString()); // 1.hücreye çalýþan senaryonun sonucunu set et.
+            // hücre sayýsýný istediðin kadar artýrabilirsin.
+            // Ör: 3. hücreyi oluþturup browser adý verebilirsin. (tabiki excel dosyanda ve metod parameterinde tanýmlamak þartýyla)
 
             //Dosyayý kapat------------------------------------------------------------------------------------//
 

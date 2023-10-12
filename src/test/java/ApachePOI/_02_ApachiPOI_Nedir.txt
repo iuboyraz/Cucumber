@@ -1,0 +1,12 @@
+/**
+Interview SORUSU
+1- Excelden veri okumasýný nasýl yaparsýnýz ?
+ApachePOI ile yapýyorum.
+*
+2- ApachePOI nedir ?
+Excelden veri okuma aracý, kütüphanesi
+*
+3- ApachePOI yi nasýl kullanýyorsun ?
+FileInputStream oluþturuyorum. (Dosyayý yani Exceli okuma için açma)
+FileInputStream -> Workbook -> Sheet -> row -> cell ilþki sýrasýna göre okuyorum.
+*/
