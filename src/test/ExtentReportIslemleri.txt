@@ -23,7 +23,9 @@ plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
 extent.reporter.spark.start=true
 extent.reporter.spark.out=test-output/SparkReport/Spark.html
 
-4- Türkçe bilgisayarlardaki karakter sorununu çözmek için aþaðýdaki kod Utilities/GWD içerisinde public static WebDriver getDriver(){}
+4- Türkçe bilgisayarlardaki karakter sorununu çözmek için aþaðýdaki kod
+Utilities/GWD içerisinde
+public static WebDriver getDriver(){}
 metodunun içerisine yapýþtýrýlýr.
 
     Locale.setDefault(new Locale("EN"));
@@ -44,6 +46,7 @@ aþaðýdaki kod extent.properties'e eklenir.
 
 8- Rapora screenshot eklenmek istenirse
 (Adding screenshot into the report)
+
 https://www.programsbuzz.com/article/how-add-screenshot-cucumber-extent-report-every-step
 https://qaautomation.expert/2022/08/10/how-to-add-screenshot-to-cucumber-extentreports/
 

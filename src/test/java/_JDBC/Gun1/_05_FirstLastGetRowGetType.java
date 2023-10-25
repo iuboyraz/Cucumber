@@ -1,6 +1,6 @@
 package _JDBC.Gun1;
 
-import _JDBC.Gun2.JDBCParent;
+import _JDBC.JDBCParent;
 import org.testng.annotations.Test;
 
 import java.sql.ResultSet;
@@ -10,7 +10,7 @@ public class _05_FirstLastGetRowGetType extends JDBCParent {
 
     @Test
     public void test1() throws SQLException {
-        ResultSet rs = sorguEkrani.executeQuery("select city from city");
+        ResultSet rs = statement.executeQuery("select city from city");
 
         rs.last(); // son satýra gider
         System.out.println("son satýrdaki þehir adý = " + rs.getString(1));

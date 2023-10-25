@@ -1,3 +1,6 @@
+# testNG de "dataProvider", cucumber da ise "scenario outline" ayný iþleve sahiptir.
+# DataTable bir stepe (tüm senaryoyu en baþtan tekrar çalýþtýrmadan) parametreyi göndermemizi saðlýyor.
+
 Feature: DataTable Functionality
 
   Background:

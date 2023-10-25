@@ -1,6 +1,6 @@
 package _JDBC.Gun1;
 
-import _JDBC.Gun2.JDBCParent;
+import _JDBC.JDBCParent;
 import org.testng.annotations.Test;
 
 import java.sql.ResultSet;
@@ -11,7 +11,7 @@ public class _06_Todo extends JDBCParent {
     // TODO : city tablosundaki tüm satýrlardaki þehir isimlerini absolute ile yazdýrýnýz
     @Test
     public void test1() throws SQLException {
-        ResultSet rs = sorguEkrani.executeQuery("select city from city");
+        ResultSet rs = statement.executeQuery("select city from city");
 
         rs.last(); // son satýra gider
         int kacinciSatirdayim = rs.getRow(); // kaçýncý satýrdayým
@@ -26,7 +26,7 @@ public class _06_Todo extends JDBCParent {
     // TODO : city tablosundaki tüm satýrlardaki þehir isimlerini relative ile yazdýrýnýz
     @Test
     public void test2() throws SQLException {
-        ResultSet rs = sorguEkrani.executeQuery("select city from city");
+        ResultSet rs = statement.executeQuery("select city from city");
 
         rs.last(); // son satýra gider
         int kacinciSatirdayim = rs.getRow(); // kaçýncý satýrdayým

@@ -8,41 +8,42 @@ public class _01_Giris {
 
     @Test
     public void test1() throws SQLException {
-//         Bir sorgunun çalýþmasý için yapýlanlar;
+//        Bir sorgunun çalýþmasý için yapýlanlar;
 //        0- Öncelikle tanýmlamalar yapýldý.
 
-        String HostUrl="jdbc:mysql://db-technostudy.ckr1jisflxpv.us-east-1.rds.amazonaws.com/sakila";
+        String HostUrl="jdbc:mysql://db-technostudy.ckr1jisflxpv.us-east-1.rds.amazonaws.com/sakila";//jdbc:mysql: eklendi
         String username="root";
         String password="'\"-LhCB'.%k[4S]z";
 
 //        1- Baðlantý bilgilerini girdik / connection bilgileri set edildi.
-        Connection baglanti = DriverManager.getConnection(HostUrl,username,password);
+        Connection connection = DriverManager.getConnection(HostUrl,username,password);
 
 //        2- DB seçtik.
 
         // ilk adýmda seçtik -> String HostUrl="db-technostudy.ckr1jisflxpv.us-east-1.rds.amazonaws.com/sakila"
 
 //        3- Sorgu ekranýný açtýk
-        Statement sorguEkrani = baglanti.createStatement();
+        Statement statement = connection.createStatement();
 
 //        4- Sorgu ekranýna sorguyu yazdým, çalýþtýrdým ve sonuçlarý aldým.
-        ResultSet sonucTablosu = sorguEkrani.executeQuery("select * from customer");
+        ResultSet resultSet = statement.executeQuery("select * from customer");
 
 //        5- Altta sonuçlar gözüktü
-        sonucTablosu.next(); // 1. satýrdayým
+        resultSet.next(); // 1. satýrdayým
 
-        String ad = sonucTablosu.getString("first_name");
-        String soyad = sonucTablosu.getString("last_name");
+
+        String ad = resultSet.getString("first_name");
+        String soyad = resultSet.getString("last_name");
         System.out.println("ad = " + ad);
         System.out.println("soyad = " + soyad);
 
-        sonucTablosu.next(); // 2. satýrdayým
+        resultSet.next(); // 2. satýrdayým
 
-        ad = sonucTablosu.getString("first_name");
-        soyad = sonucTablosu.getString("last_name");
+        ad = resultSet.getString("first_name");
+        soyad = resultSet.getString("last_name");
         System.out.println("ad = " + ad);
         System.out.println("soyad = " + soyad);
 
-        baglanti.close(); // baðlantýyý kapattým
+        connection.close(); // baðlantýyý kapattým
     }
 }

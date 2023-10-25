@@ -26,13 +26,21 @@ Feature: Creating multiple exam
       | addButton |
 
     And User sends the keys into the DialogBox
-      | nameInput | <name> |
+      | nameInput | <ExamName> |
 
     And Click on the element in the DialogContent
-      | academicPeriod  |
-      | academicPeriod1 |
-      | gradeLevel      |
-      | gradeLevel2     |
+      | academicPeriod |
+
+    And Click on the element in the DialogContent
+      #| academicPeriod1 |
+      | <AcademicPeriodOption> |
+
+    And Click on the element in the DialogContent
+      | gradeLevel |
+
+    And Click on the element in the DialogContent
+      #| gradeLevel2     |
+      | <GradeLevelOption> |
 
     And Click on the element in the DialogContent
       | saveButton |
@@ -50,13 +58,13 @@ Feature: Creating multiple exam
       | academicPeriod1      |
 
     And User deletes the element from the DialogBox
-      | <name> |
+      | <ExamName> |
 
     Then Success message should be displayed
     Examples:
-      | name            |
-      | Math exam is1   |
-      | IT exam is1     |
-      | Oracle exam is1 |
-      | Math exam is2   |
+      | ExamName        | AcademicPeriodOption | GradeLevelOption |
+      | Math exam is1   | academicPeriod1      | gradeLevel2      |
+      | IT exam is1     | academicPeriod1      | gradeLevel2      |
+      | Oracle exam is1 | academicPeriod1      | gradeLevel2      |
+      | Math exam is2   | academicPeriod1      | gradeLevel2      |
 

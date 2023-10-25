@@ -4,8 +4,11 @@ import Utilities.GWD;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.FindBys;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+
+import java.util.List;
 
 public class DialogContent extends Parent{
     public DialogContent(){
@@ -76,12 +79,15 @@ public class DialogContent extends Parent{
     @FindBy(xpath="(//span[text()='Grade Level'])[1]")
     private WebElement gradeLevel;
 
-    //@FindBy(xpath="(//mat-option//span)[2]")
-    @FindBy(xpath = "(//*[@role='option'])[4]")
+    @FindBy(xpath = "(//*[@role='option'])[4]") //@FindBy(xpath="(//mat-option//span)[2]")
     private WebElement gradeLevel2;
 
     @FindBy(xpath="//mat-select//span[text()='Test 2024']")
     private WebElement searchAcademicPeriod;
+
+    @FindBy(xpath="//tbody[@role='rowgroup']//tr//td[2]")
+    public List<WebElement> statesFirst10;
+    //td[@class='mat-mdc-cell mdc-data-table__cell cdk-cell cdk-column-name mat-column-name ng-tns-c1331969616-48 ng-star-inserted']
 
      public WebElement getWebElement(String strElement){
         switch (strElement){
@@ -121,7 +127,7 @@ public class DialogContent extends Parent{
         bu çocuklarýn sayýsý 0 olana kadar bekle.
         */
 
-        //wait.until(ExpectedConditions.numberOfElementsToBe(By.xpath("//fuse-progress-bar/*"),0));
+        wait.until(ExpectedConditions.numberOfElementsToBe(By.xpath("//fuse-progress-bar/*"),0));
 
         myJsClick(deleteImageButton);
         myJsClick(deleteDialogButton);

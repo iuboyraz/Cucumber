@@ -49,7 +49,7 @@ public class GWD {
                     threadDriver.set(new SafariDriver());
                     break;
                 default:
-                    // ilgili thread/pipe'e (runnerstan browser isteði gelmezse) bir default olarak ChromeDriver'ý set ettim.
+                    // ilgili thread/pipe'e (runnerstan browser isteði gelmezse) default olarak ChromeDriver'ý set ettim.
                     threadDriver.set(new ChromeDriver());
             }
         }

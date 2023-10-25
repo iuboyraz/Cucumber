@@ -20,6 +20,7 @@ public class _08_ParallelTest extends AbstractTestNGCucumberTests {
 // extent report'a ek bilgiler eklemek için aþaðýdaki kod satýrý eklendi.
 //Ornek:Test Reports/TestReport 21-Eyl-23 21.49.33/test-output/SparkReport/Spark.html dosyasý tiklanarak rapor görülebilir.
 
+    // cross browser testi için XML klasöründeki .xml dosyasýnda istediðin browserlarý set et ve çalýþtýr.
     @BeforeClass
     @Parameters("browserTipi")
     public void beforeClass(String browserName)

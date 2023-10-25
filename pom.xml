@@ -15,15 +15,17 @@
     </properties>
 
     <dependencies>
-        <!--Eklenecek dependenciesler-->
+        <!--Dependencies must be added-->
+
         <!--selenium-->
         <!--testNG-->
         <!--cucumber-Java-->
         <!--cucumber-testNG-->
-        <!--sl4fj-api-->
+        <!--sl4fj-api--> <!--For logging-->
         <!--sl4fj-simple-->
-        <!--apache.commons:commons-lang3-->
-        <!--tech.grasshopper:extentreports-cucumber7-adapter-->
+        <!--apache.commons:commons-lang3--> <!--For Random String generation-->
+        <!--tech.grasshopper:extentreports-cucumber7-adapter--> <!--For extent report-->
+        <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java/8.0.18 --> <!--For JDBC-->
 
         <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
         <dependency>
@@ -81,7 +83,7 @@
             <version>3.12.0</version>
         </dependency>
 
-        <!--added for extend report-->
+        <!--added for extent report-->
         <!--https://mvnrepository.com/artifact/tech.grasshopper/extentreports-cucumber7-adapter-->
         <dependency>
             <groupId>tech.grasshopper</groupId>
@@ -89,7 +91,7 @@
             <version>1.9.2</version> <!--1.9.2--> <!--https://www.programsbuzz.com/article/cucumber-testng-generate-extent-report-using-extent-adapter-grasshopper-->
         </dependency>
 
-        <!-- Following 2 dependencies are added for excel processes -->
+        <!-- Following 2 dependencies were added for MsOffice (excel) processes -->
         <!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
         <dependency>
             <groupId>org.apache.poi</groupId>
@@ -103,7 +105,9 @@
             <artifactId>poi-ooxml</artifactId>
             <version>4.1.0</version>
         </dependency>
-        <!-- JDBC - MySql için eklendi -->
+
+        <!-- JDBC - added for MySQL -->
+        <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java/8.0.18 -->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>

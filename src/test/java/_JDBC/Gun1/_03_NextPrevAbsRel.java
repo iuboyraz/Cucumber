@@ -1,6 +1,6 @@
 package _JDBC.Gun1;
 
-import _JDBC.Gun2.JDBCParent;
+import _JDBC.JDBCParent;
 import org.testng.annotations.Test;
 
 import java.sql.ResultSet;
@@ -10,7 +10,7 @@ public class _03_NextPrevAbsRel extends JDBCParent {
 
     @Test
     public void test1() throws SQLException {
-        ResultSet rs = sorguEkrani.executeQuery("select * from language");
+        ResultSet rs = statement.executeQuery("select * from language");
 
         rs.next();
         System.out.println("1.Satýr = " + rs.getString(2)); // 2. column alýndý - English
@@ -24,7 +24,7 @@ public class _03_NextPrevAbsRel extends JDBCParent {
 
     @Test
     public  void  test2() throws SQLException {
-        ResultSet rs = sorguEkrani.executeQuery("select * from film");
+        ResultSet rs = statement.executeQuery("select * from film");
 
         rs.absolute(10); // baþtan 10. satýra direkt git.
         System.out.println("10.Satýr title = " + rs.getString("title"));

@@ -40,8 +40,8 @@ public class _09_DataTableSteps {
         List<List<String>> items = data.asLists(String.class);
 
         for (int i = 0; i < items.size(); i++) {
-            WebElement element = dc.getWebElement(items.get(i).get(0));
-            String text = items.get(i).get(1);//Önce 1.elementin daha sonra 2.elementin texti
+            WebElement element = dc.getWebElement(items.get(i).get(0));//Önce 0.elementin daha sonra 1.elementin WebElementi
+            String text = items.get(i).get(1);//Önce 0.elementin daha sonra 1.elementin texti
 
             dc.mySendKeys(element, text);
         }

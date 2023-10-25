@@ -5,15 +5,15 @@ Feature: DataTable Ornek
     And Write username and password "ismet" and "1234"
 
     And Write username as DataTable
-    |ismet|
-    |mehmet|
-    |ayse|
-    |fatma|
-    |ali|
-    |veli|
+      | ismet  |
+      | mehmet |
+      | ayse   |
+      | fatma  |
+      | ali    |
+      | veli   |
 
     And Write username and password as DataTable
-      |ismet  | 1234 |
-      |mehmet | 23323|
-      |ayse   | 45454|
-      |fatma  | 44545|
+      | ismet  | 1234  |
+      | mehmet | 23323 |
+      | ayse   | 45454 |
+      | fatma  | 44545 |

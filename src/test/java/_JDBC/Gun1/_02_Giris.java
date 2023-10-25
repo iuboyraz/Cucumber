@@ -1,6 +1,6 @@
 package _JDBC.Gun1;
 
-import _JDBC.Gun2.JDBCParent;
+import _JDBC.JDBCParent;
 import org.testng.annotations.Test;
 
 import java.sql.ResultSet;
@@ -10,16 +10,17 @@ public class _02_Giris extends JDBCParent {
 
     @Test
     public  void  test1() throws SQLException {
-        ResultSet sonuc = sorguEkrani.executeQuery("select * from customer");
+        ResultSet resultSet = statement.executeQuery("select * from customer");
 
-        sonuc.next(); // 1. satýrdayým
+        resultSet.next(); // 1.
+        // satýrdayým
 
-        System.out.println("ad = " + sonuc.getString("first_name"));
-        System.out.println("soyad = " + sonuc.getString("last_name"));
+        System.out.println("ad = " + resultSet.getString("first_name"));
+        System.out.println("soyad = " + resultSet.getString("last_name"));
 
-        sonuc.next(); // 2. satýrdayým
+        resultSet.next(); // 2. satýrdayým
 
-        System.out.println("ad = " + sonuc.getString("first_name"));
-        System.out.println("soyad = " + sonuc.getString("last_name"));
+        System.out.println("ad = " + resultSet.getString("first_name"));
+        System.out.println("soyad = " + resultSet.getString("last_name"));
     }
 }

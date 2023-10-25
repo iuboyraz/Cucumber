@@ -1,4 +1,5 @@
 # TestNG deki dataProvider ýn karþýlýðý Cucumber da Scenario Outline
+# Gönderilen her bir deðer için tüm senaryo en baþtan itibaren tekrar çalýþýr.
 
 #Senaryo
 #CitizenShip sayfasýna gidiniz.

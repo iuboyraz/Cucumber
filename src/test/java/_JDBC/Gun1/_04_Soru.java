@@ -1,6 +1,6 @@
 package _JDBC.Gun1;
 
-import _JDBC.Gun2.JDBCParent;
+import _JDBC.JDBCParent;
 import org.testng.annotations.Test;
 
 import java.sql.ResultSet;
@@ -12,7 +12,7 @@ public class _04_Soru extends JDBCParent {
 
     @Test
     public void test1() throws SQLException {
-        ResultSet rs = sorguEkrani.executeQuery("select * from city");
+        ResultSet rs = statement.executeQuery("select * from city");
 
         // 1. Yöntem
         while (rs.next())
