@@ -4,9 +4,9 @@ JDBC is an API consists of a set of interfaces and classes written in the Java p
 It enables me to access DBMS so that I can manipulate the database automatically.
 
 JDBC yi nasýl kullanýrsýn ?
-I send my queries and compare query returns to the results got from web.
+I send my queries and compare them with the results returning from the web.
 To do this;
-first of all, set a connection between java and DBMS entering URL, username, and password
+first of all, set a connection between java and DBMS by entering URL, username, and password
 then create my statement which will be used through this connection, and
 finally, run my tests and get results, ResultSet.
 

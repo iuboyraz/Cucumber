@@ -12,7 +12,6 @@ import org.testng.Assert;
 import java.time.Duration;
 
 public class Parent {
-
     public WebDriverWait wait = new WebDriverWait(GWD.getDriver(), Duration.ofSeconds(20));
 
     public void myClick(WebElement element){
@@ -26,9 +25,7 @@ public class Parent {
         wait.until(ExpectedConditions.elementToBeClickable(element));
         scrollToElement(element);
         element.click();
-
     }
-
     public void mySendKeys(WebElement element, String yazi){
         /*
         Bir textbox'ýn saðlýklý çalýþmasý için yapýlacak iþlemler;
@@ -42,15 +39,12 @@ public class Parent {
         scrollToElement(element);
         element.clear();
         element.sendKeys(yazi);
-
     }
-
     public void scrollToElement (WebElement element){
 
         JavascriptExecutor js = (JavascriptExecutor) GWD.getDriver();
         js.executeScript("arguments[0].scrollIntoView(true);", element);
     }
-
     public void verifyContainsText(WebElement element, String value){
 
         wait.until(ExpectedConditions.textToBePresentInElement(element,value));
@@ -59,15 +53,11 @@ public class Parent {
         //bir sonraki aramada locator'ý bulmada stale element not found/Unable to locate element hatasý oluþturuyor.
         //Actions ile ESC ye basarak çýkan mesajý kapatarak çözdük.
         new Actions(GWD.getDriver()).sendKeys(Keys.ESCAPE).build().perform();
-
     }
-
     public void myJsClick(WebElement element) {
-
         wait.until(ExpectedConditions.elementToBeClickable(element));
         scrollToElement(element);
         JavascriptExecutor js = (JavascriptExecutor) GWD.getDriver();
         js.executeScript("arguments[0].click();", element);
     }
-
 }

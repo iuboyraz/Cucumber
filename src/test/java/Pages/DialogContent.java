@@ -15,7 +15,6 @@ public class DialogContent extends Parent{
         PageFactory.initElements(GWD.getDriver(),this);
         // Kullanýlacaðý zaman bu sayfadaki locatorlarý driver üzerinden initialize eder.
     }
-
     @FindBy (css="input[formcontrolname='username']")
     public WebElement username;
 

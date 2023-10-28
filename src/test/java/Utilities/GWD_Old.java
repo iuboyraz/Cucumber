@@ -10,12 +10,12 @@ import java.util.logging.Logger;
 
 public class GWD_Old {
     private static WebDriver driver;
-
     public static WebDriver getDriver() {
 
         Logger logger = Logger.getLogger("");
         // output yapýlan loglarý al,
         logger.setLevel(Level.SEVERE);
+        //<!--# logging level hierarchy: ALL -> TRACE -> DEBUG -> INFO -> WARN -> ERROR -> FATAL -> OFF
         // sadece ERRORLARI göster. Yani hata seviyesi YÜKSEK olanlarý göster.
         // Böylece chrome vb browser güncelleme eksikliklerinin hatalarýný run kýsmýnda göstermeyecek.
 
@@ -30,7 +30,6 @@ public class GWD_Old {
         }
         return driver;
     }
-
     public static void quitDriver() {
         // test sonucunun ekranda bir miktar beklemesi için
         try {

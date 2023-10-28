@@ -4,33 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8982d521-96b2-4787-b4e4-1f97b7dfca43" name="Changes" comment="new features added">
-      <change afterPath="$PROJECT_DIR$/src/test/java/FeatureFiles/_14_JDBCStates.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/StepDefinitions/_14_JDBCStatesSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Utilities/DBUtility.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/_JDBC/Gun2/_01_GetAllColumn.java" afterDir="false" />
+    <list default="true" id="8982d521-96b2-4787-b4e4-1f97b7dfca43" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/ExtentReportIslemleri.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/ExtentReportIslemleri.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ApachePOI/ExcelFiles/SenaryoSonuclari3.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ApachePOI/ExcelFiles/SenaryoSonuclari3.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/FeatureFiles/_06_ScenarioOutlineCitizenship.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FeatureFiles/_06_ScenarioOutlineCitizenship.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/FeatureFiles/_08_DataTableOrnek.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FeatureFiles/_08_DataTableOrnek.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/FeatureFiles/_09_DataTable.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FeatureFiles/_09_DataTable.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/FeatureFiles/_12_EntranceExamScenarioOutline.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FeatureFiles/_12_EntranceExamScenarioOutline.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Pages/DialogContent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/DialogContent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/LeftNav.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/LeftNav.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/Parent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/Parent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Runners/_01_TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Runners/_01_TestRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Runners/_05_TestRunnerRegression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Runners/_05_TestRunnerRegression.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Runners/_06_TestRunnerSmokeWithPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Runners/_06_TestRunnerSmokeWithPlugin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Runners/_07_TestRunnerExtentReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Runners/_07_TestRunnerExtentReport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Runners/_08_ParallelTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Runners/_08_ParallelTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/StepDefinitions/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefinitions/Hooks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/StepDefinitions/_09_DataTableSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefinitions/_09_DataTableSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Utilities/ExcelUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utilities/ExcelUtility.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Utilities/GWD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utilities/GWD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Utilities/GWD_Old.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utilities/GWD_Old.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/_JDBC/Gun1/_01_Giris.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/_JDBC/Gun1/_01_Giris.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/_JDBC/Gun1/_02_Giris.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/_JDBC/Gun1/_02_Giris.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/_JDBC/Gun1/_03_NextPrevAbsRel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/_JDBC/Gun1/_03_NextPrevAbsRel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/_JDBC/Gun1/_04_Soru.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/_JDBC/Gun1/_04_Soru.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/_JDBC/Gun1/_05_FirstLastGetRowGetType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/_JDBC/Gun1/_05_FirstLastGetRowGetType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/_JDBC/Gun1/_06_Todo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/_JDBC/Gun1/_06_Todo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/_JDBC/Gun2/JDBCParent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/_JDBC/JDBCParent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/_cucumbersetup/CucumberConfiguration.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/_cucumbersetup/setUp06.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/_cucumbersetup/setUp06.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/_JDBC/_Interview Questions.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/_JDBC/_Interview Questions.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/_cucumbersetup/CucumberDependencies.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/_cucumbersetup/CucumberDependencies.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/extent.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/extent.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,23 +51,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_directory_selection&quot;: &quot;C:/JavaLessons/Bootcamp/Cucumber/src/test/java/StepDefinitions&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/JavaLessons/Bootcamp/Cucumber&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.fileTypes&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_directory_selection": "C:/JavaLessons/Bootcamp/Cucumber/src/test/java/StepDefinitions",
+    "last_opened_file_path": "C:/JavaLessons/Bootcamp/Cucumber",
+    "project.structure.last.edited": "Global Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\JavaLessons\Bootcamp\Cucumber\src\test\java\ApachePOI\ExcelFiles" />
@@ -192,7 +185,6 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG._08_ParallelTest" />
-        <item itemvalue="Cucumber Java.Feature: _14_JDBCStates" />
         <item itemvalue="TestNG._01_GetAllColumn.test4" />
         <item itemvalue="TestNG._01_GetAllColumn.test3_Printf" />
         <item itemvalue="TestNG._01_GetAllColumn (1)" />
@@ -320,14 +312,31 @@
       <option name="project" value="LOCAL" />
       <updated>1697142511467</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="updated">
+      <option name="closed" value="true" />
+      <created>1698234610641</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1698234610641</updated>
+    </task>
+    <task id="LOCAL-00016" summary="updated">
+      <option name="closed" value="true" />
+      <created>1698234637714</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1698234637714</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit and day1" />
     <MESSAGE value="updates" />
     <MESSAGE value="new features added" />
-    <option name="LAST_COMMIT_MESSAGE" value="new features added" />
+    <MESSAGE value="updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

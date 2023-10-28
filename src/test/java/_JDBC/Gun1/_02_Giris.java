@@ -12,8 +12,7 @@ public class _02_Giris extends JDBCParent {
     public  void  test1() throws SQLException {
         ResultSet resultSet = statement.executeQuery("select * from customer");
 
-        resultSet.next(); // 1.
-        // satýrdayým
+        resultSet.next(); // 1.satýrdayým
 
         System.out.println("ad = " + resultSet.getString("first_name"));
         System.out.println("soyad = " + resultSet.getString("last_name"));

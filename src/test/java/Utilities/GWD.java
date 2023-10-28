@@ -24,6 +24,7 @@ public class GWD {
         Logger logger = Logger.getLogger("");
         // output yapýlan loglarý al,
         logger.setLevel(Level.SEVERE);
+        //<!--# logging level hierarchy: ALL -> TRACE -> DEBUG -> INFO -> WARN -> ERROR -> FATAL -> OFF
         // sadece ERRORLARI göster. Yani hata seviyesi YÜKSEK olanlarý göster.
         // Böylece chrome vb browser güncelleme eksikliklerinin hatalarýný run kýsmýnda göstermeyecek.
 
@@ -57,7 +58,6 @@ public class GWD {
         threadDriver.get().manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
         return threadDriver.get();// bulunduðum thread (pipe)'için driver al.
     }
-
     public static void quitDriver() {
         // test sonucunun ekranda bir miktar beklemesi için
         try {

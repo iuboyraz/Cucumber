@@ -10,6 +10,7 @@
         2-org.testng:testng:6.14.3
         3-io.cucumber:cucumber-java 7.9.0 (io.cucumber/cucumber-java)
         4-io.cucumber:cucumber-testng 7.9.0 (io.cucumber/cucumber-testng)
+
 	5-slf4j-api 1.8.0-beta2
 	6-slf4j-simple 1.8.0-beta2
 	7-Apache Commons Lang 3.12.0 
@@ -32,7 +33,7 @@
    4-Creating folders
    Create following folders under the test/java folder
    FeatureFiles   -> Senaryolarımızın olduğu klasör
-   StepDefinitions-> Senaryoların çalışan adımları - metodları burada olacak
    Pages          -> Page Object Model sayfalarımız POM (@FindBy)
-   Utilities      -> Driver ve diğer tekrar kullanılacak metodlarımız
    Runners        -> Çalıştırıcılar
+   StepDefinitions-> Senaryoların çalışan adımları - metodları burada olacak
+   Utilities      -> Driver ve diğer tekrar kullanılacak metodlarımız

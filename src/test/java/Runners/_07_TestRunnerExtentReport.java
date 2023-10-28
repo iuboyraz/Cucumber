@@ -6,7 +6,6 @@ import io.cucumber.testng.CucumberOptions;
 import org.testng.annotations.AfterClass;
 
 @CucumberOptions(
-
         tags = "@Regression",
         features = {"src/test/java/FeatureFiles"},
         glue = {"StepDefinitions"},

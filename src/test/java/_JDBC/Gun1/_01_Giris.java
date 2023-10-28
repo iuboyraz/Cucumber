@@ -13,7 +13,7 @@ public class _01_Giris {
 
         String HostUrl="jdbc:mysql://db-technostudy.ckr1jisflxpv.us-east-1.rds.amazonaws.com/sakila";//jdbc:mysql: eklendi
         String username="root";
-        String password="'\"-LhCB'.%k[4S]z";
+        String password="'\"-LhCB'.%k[4S]z"; // ters slash (\) iþaretini týrnak iþaretinin (") javaya ait olmadýðýný (þifreye ait olduðunu) belirtmek için  kullandýk.
 
 //        1- Baðlantý bilgilerini girdik / connection bilgileri set edildi.
         Connection connection = DriverManager.getConnection(HostUrl,username,password);

@@ -13,7 +13,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ExcelUtility {
-
     public static ArrayList<ArrayList<String>> getData(String path, String sheetName, int sutunSayisi) {
         ArrayList<ArrayList<String>> tablo = new ArrayList<>();
 
@@ -35,7 +34,6 @@ public class ExcelUtility {
             }
             tablo.add(satir);
         }
-
         return tablo;
     }
 

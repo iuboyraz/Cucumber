@@ -9,12 +9,10 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
 public class Hooks {
-
     @Before // cucumber'ýn annotation'ý
     public void before() {
         // System.out.println("Senaryo baþladý mý?");
     }
-
     @After // cucumber'ýn annotation'ý
     public void after(Scenario scenario) {
         ExcelUtility.writeToExcel("src/test/java/ApachePOI/ExcelFiles/SenaryoSonuclari3.xlsx",
