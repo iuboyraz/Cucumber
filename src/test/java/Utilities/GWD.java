@@ -51,7 +51,7 @@ public class GWD {
                     threadDriver.set(new SafariDriver());
                     break;
                 default:
-                    //Jenkinste Chrome un memory sinin maximum çalýþmasý "headless" kod eklendi.
+                    //Jenkinste Chrome un memory sinin maximum çalýþmasý "headless" kod eklendi
                     ChromeOptions options = new ChromeOptions();
                     options.addArguments("--headless", "--no-sandbox", "--disable-dev-shm-usage", "--disable-gpu", "--window-size=1400,2400");
 
