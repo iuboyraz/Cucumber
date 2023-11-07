@@ -21,7 +21,6 @@
    
    . add under every depency "<scope>test</scope>" line
    . correct compiler version 19 -> 1.9
-	
 
    3-Intellij Editor configuration
    File

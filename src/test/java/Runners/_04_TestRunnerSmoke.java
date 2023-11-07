@@ -7,7 +7,8 @@ import io.cucumber.testng.CucumberOptions;
         // aþaðýdaki testlerde smoke olanlarý çalýþtýr.
         tags = "@SmokeTest", //@Regression da denilebilir. Ýlgili FeatureFiles ta da gerekli annotation verilir.
         features = {"src/test/java/FeatureFiles"},//klasördeki bütün featurelar
-        glue={"StepDefinitions"}
+        glue={"StepDefinitions"},
+        plugin= {"json:target/cucumber/cucumber.json"} // Jenkins için JSON report eklentisi
 )
 
 public class _04_TestRunnerSmoke extends AbstractTestNGCucumberTests {

@@ -21,7 +21,6 @@ public class Parent {
         2- scroll to the element
         3- click
          */
-
         wait.until(ExpectedConditions.elementToBeClickable(element));
         scrollToElement(element);
         element.click();
@@ -41,12 +40,10 @@ public class Parent {
         element.sendKeys(yazi);
     }
     public void scrollToElement (WebElement element){
-
         JavascriptExecutor js = (JavascriptExecutor) GWD.getDriver();
         js.executeScript("arguments[0].scrollIntoView(true);", element);
     }
     public void verifyContainsText(WebElement element, String value){
-
         wait.until(ExpectedConditions.textToBePresentInElement(element,value));
         Assert.assertTrue(element.getText().toLowerCase().contains(value.toLowerCase()));
         //Programý çalýþtýrdýðýmýzda silmede çýkan mesaj (dialog kutusu)
