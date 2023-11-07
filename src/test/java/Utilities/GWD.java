@@ -52,17 +52,30 @@ public class GWD {
                     threadDriver.set(new SafariDriver());
                     break;
                 default:
-                    //Jenkinste firefox un memory sinin maximum çalýþmasý "headless" kod eklendi
-                    FirefoxOptions options = new FirefoxOptions();
-                    options.addArguments("--headless", "--no-sandbox", "--disable-dev-shm-usage", "--disable-gpu", "--window-size=1400,2400");
-                    // ilgili thread/pipe'e (runnerstan browser isteði gelmezse) default olarak FirefoxDriver'ý set ettim.
-                    threadDriver.set(new FirefoxDriver());
+                    if (isRunningOnJenkins()) {
+                        //Jenkinste firefox un memory sinin maximum çalýþmasý için "headless" kod eklendi
+                        FirefoxOptions options = new FirefoxOptions();
+                        options.addArguments("--headless", "--no-sandbox", "--disable-dev-shm-usage", "--disable-gpu", "--window-size=1400,2400");
+                        // ilgili thread/pipe'e (runnerstan browser isteði gelmezse) default olarak FirefoxDriver'ý set ettim.
+                        threadDriver.set(new FirefoxDriver());
+                    }
+                    else {
+                        threadDriver.set(new ChromeDriver()); // ilgili threade bir ChromeDriver'ý set ettim
+                    }
+
+                    //Jenkinste edge in memory sinin maximum çalýþmasý için "headless" ve default kod
+                    /*
+                    EdgeOptions eOptions = new EdgeOptions();
+                    eOptions.addArguments("--headless", "--no-sandbox", "--disable-dev-shm-usage", "--disable-gpu", "--window-size=1400,2400");
+                    threadDriver.set(new EdgeDriver(eOptions));
+                     */
             }
         }
         threadDriver.get().manage().window().maximize();
         threadDriver.get().manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
         return threadDriver.get();// bulunduðum thread (pipe)'için driver al.
     }
+
     public static void quitDriver() {
         // test sonucunun ekranda bir miktar beklemesi için
         try {
@@ -78,5 +91,10 @@ public class GWD {
 
             threadDriver.set(driver);// kendisine null olarak ver böylece bu thread/pipe ta dolu bir driver kalmadý.
         }
+    }
+
+    public static boolean isRunningOnJenkins() {
+        String jenkinsHome = System.getenv("JENKINS_HOME");
+        return jenkinsHome != null && !jenkinsHome.isEmpty();
     }
 }
