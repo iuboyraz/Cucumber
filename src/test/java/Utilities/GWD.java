@@ -37,7 +37,7 @@ public class GWD {
         // Bu if code xmlden çalýþtýrma yapýlmadýðýnda yani runnerslardan çalýþtýrýldýðýnda çalýþacak.
         // Bu if code alttaki if code a eklenmedi çünkü null deðer geldiðinde switch onu görüp default deðere yönlendirmiyor.
         if (threadBrowserName.get() == null)  // eðer driver boþ ise 1 kere çalýþsýn.
-            threadBrowserName.set("chrome");// ve driver chromeDriver olsun
+            threadBrowserName.set("firefox");// ve driver FirefoxDriver olsun
 
         // gelen browser ismine göre firefox, edge, safari, chrome, browser switch ile set ediliyor.
         if (threadDriver.get() == null) {// eðer driver boþ ise 1 kere çalýþsýn.

@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8982d521-96b2-4787-b4e4-1f97b7dfca43" name="Changes" comment="Jenkinste Chrome un memory sinin maximum çalışması &quot;headless&quot; için GWD de kod eklendi.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Runners/_04_TestRunnerSmoke.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Runners/_04_TestRunnerSmoke.java" afterDir="false" />
-    </list>
+    <list default="true" id="8982d521-96b2-4787-b4e4-1f97b7dfca43" name="Changes" comment="Jenkinste Firefox default tanımlandı.&#10;memory sinin maximum çalışması &quot;headless&quot; için GWD ye kod eklendi." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -358,7 +355,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699377105069</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Jenkinste Firefox default tanımlandı.&#10;memory sinin maximum çalışması &quot;headless&quot; için GWD ye kod eklendi.">
+      <option name="closed" value="true" />
+      <created>1699381220939</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1699381220939</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -370,7 +375,8 @@
     <MESSAGE value="Jenkinste hata almamak için hooks ta excel ve scenario kapatıldı" />
     <MESSAGE value="Jenkinste Chrome un memory sinin maximum çalışması &quot;headless&quot; kod eklendi" />
     <MESSAGE value="Jenkinste Chrome un memory sinin maximum çalışması &quot;headless&quot; için GWD de kod eklendi." />
-    <option name="LAST_COMMIT_MESSAGE" value="Jenkinste Chrome un memory sinin maximum çalışması &quot;headless&quot; için GWD de kod eklendi." />
+    <MESSAGE value="Jenkinste Firefox default tanımlandı.&#10;memory sinin maximum çalışması &quot;headless&quot; için GWD ye kod eklendi." />
+    <option name="LAST_COMMIT_MESSAGE" value="Jenkinste Firefox default tanımlandı.&#10;memory sinin maximum çalışması &quot;headless&quot; için GWD ye kod eklendi." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
