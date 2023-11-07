@@ -15,6 +15,7 @@ public class Hooks {
     }
     @After // cucumber'ýn annotation'ý
     public void after(Scenario scenario) {
+        /* Jenkins cucumber report için kapatýldý.
         ExcelUtility.writeToExcel("src/test/java/ApachePOI/ExcelFiles/SenaryoSonuclari3.xlsx",
                 scenario);
 
@@ -23,6 +24,7 @@ public class Hooks {
         // diðer classlarda KAPALI kalsýn. Çünkü plugin olmayacaðý için senaryoyu bulamaz ve hata verir.
 
         // extend report'a screenshot eklemek için bu if blok yazýldý.
+
         if (scenario.isFailed()) {
             TakesScreenshot ts = ((TakesScreenshot) GWD.getDriver());
             byte[] inMemory = ts.getScreenshotAs(OutputType.BYTES); // Baþka bir dosyaya ekleyebilmek için tip byte seçildi.
@@ -30,6 +32,7 @@ public class Hooks {
             // GenericFunctions.getByteScreenshot() -> inMemory ile deðiþtirildi.
             scenario.attach(inMemory, "image/png", "screenshot name");
         }
+         */
         // System.out.println("Senaryo bitti mi?");
         // doðru çalýþýrsa quitDriver()'ý çaðýracaðýz.
         GWD.quitDriver(); // driver'ý kapattýk.
