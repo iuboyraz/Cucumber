@@ -5,6 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.safari.SafariDriver;
 
 import java.time.Duration;
@@ -41,8 +42,8 @@ public class GWD {
         // gelen browser ismine göre firefox, edge, safari, chrome, browser switch ile set ediliyor.
         if (threadDriver.get() == null) {// eðer driver boþ ise 1 kere çalýþsýn.
             switch (threadBrowserName.get()) {
-                case "firefox":// ilgili thread/pipe'e (runnerstan gelen browser isteðine) bir FirefoxDriver'ý set ettim.
-                    threadDriver.set(new FirefoxDriver());
+                case "chrome":// ilgili thread/pipe'e (runnerstan gelen browser isteðine) bir ChromeDriver'ý set ettim.
+                    threadDriver.set(new ChromeDriver());
                     break;
                 case "edge":
                     threadDriver.set(new EdgeDriver());
@@ -51,12 +52,11 @@ public class GWD {
                     threadDriver.set(new SafariDriver());
                     break;
                 default:
-                    //Jenkinste Chrome un memory sinin maximum çalýþmasý "headless" kod eklendi
-                    ChromeOptions options = new ChromeOptions();
+                    //Jenkinste firefox un memory sinin maximum çalýþmasý "headless" kod eklendi
+                    FirefoxOptions options = new FirefoxOptions();
                     options.addArguments("--headless", "--no-sandbox", "--disable-dev-shm-usage", "--disable-gpu", "--window-size=1400,2400");
-
-                    // ilgili thread/pipe'e (runnerstan browser isteði gelmezse) default olarak ChromeDriver'ý set ettim.
-                    threadDriver.set(new ChromeDriver());
+                    // ilgili thread/pipe'e (runnerstan browser isteði gelmezse) default olarak FirefoxDriver'ý set ettim.
+                    threadDriver.set(new FirefoxDriver());
             }
         }
         threadDriver.get().manage().window().maximize();

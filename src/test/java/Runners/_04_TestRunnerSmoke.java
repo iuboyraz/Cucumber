@@ -6,7 +6,7 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
         // aþaðýdaki testlerde smoke olanlarý çalýþtýr.
         tags = "@SmokeTest", //@Regression da denilebilir. Ýlgili FeatureFiles ta da gerekli annotation verilir.
-        features = {"src/test/java/FeatureFiles"},//klasördeki bütün featurelar
+        features = {"src/test/java/FeatureFiles"},//klasördeki bütün feature lar
         glue={"StepDefinitions"},
         plugin= {"json:target/cucumber/cucumber.json"} // Jenkins için JSON report eklentisi
 )
