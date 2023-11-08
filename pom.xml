@@ -88,7 +88,8 @@
         <dependency>
             <groupId>tech.grasshopper</groupId>
             <artifactId>extentreports-cucumber7-adapter</artifactId>
-            <version>1.9.2</version> <!--1.9.2--> <!--https://www.programsbuzz.com/article/cucumber-testng-generate-extent-report-using-extent-adapter-grasshopper-->
+            <version>1.9.2
+            </version> <!--1.9.2--> <!--https://www.programsbuzz.com/article/cucumber-testng-generate-extent-report-using-extent-adapter-grasshopper-->
         </dependency>
 
         <!-- Following 2 dependencies were added for MsOffice (excel) processes -->
@@ -116,7 +117,7 @@
 
     </dependencies>
 
-    <!--  Jenkins in Çalıştırma komutu, hangi testi çalıştıracağını belirlememiz için gereken plugin -->
+    <!--  Jenkins i Çalıştırma komutu, hangi testi çalıştıracağını belirlememiz için gereken plugin -->
     <build>
         <plugins>
             <plugin>
@@ -137,5 +138,49 @@
             </plugin>
         </plugins>
     </build>
+    <!--Jenkins ten çalıştırmak için eklendi-->
+    <profiles>
+        <profile>
+            <id>Smoke_Yeni</id>
+
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-surefire-plugin</artifactId>
+                        <version>3.0.0-M1</version>
+                        <configuration>
+
+                            <includes>
+                                <!-- for  run class or classes  **/:bulunduğu lokasyonu bütün klasörlere göre bulabiliyor   -->
+                                <include>**/_04_TestRunnerSmoke.java</include>
+                            </includes>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        <!--Jenkins ten çalıştırmak için eklendi-->
+        <profile>
+            <id>Regression</id>
+
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-surefire-plugin</artifactId>
+                        <version>3.0.0-M1</version>
+                        <configuration>
+
+                            <includes>
+                                <!-- for  run class or classes  **/:bulunduğu lokasyonu bütün klasörlere göre bulabiliyor   -->
+                                <include>**/_05_TestRunnerRegression.java</include>
+                            </includes>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
 
 </project>

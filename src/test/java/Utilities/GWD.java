@@ -60,7 +60,7 @@ public class GWD {
                         threadDriver.set(new FirefoxDriver());
                     }
                     else {
-                        threadDriver.set(new ChromeDriver()); // ilgili threade bir ChromeDriver'ý set ettim
+                        threadDriver.set(new ChromeDriver()); // Eðer test Jenkinsten çalýþtýrýlmýyorsa ilgili threade ChromeDriver'ý set ettim
                     }
 
                     //Jenkinste edge in memory sinin maximum çalýþmasý için "headless" ve default kod
@@ -73,7 +73,7 @@ public class GWD {
         }
         threadDriver.get().manage().window().maximize();
         threadDriver.get().manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
-        return threadDriver.get();// bulunduðum thread (pipe)'için driver al.
+        return threadDriver.get();// bulunduðum thread (pipe) için driver al.
     }
 
     public static void quitDriver() {
