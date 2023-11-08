@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8982d521-96b2-4787-b4e4-1f97b7dfca43" name="Changes" comment="GWD ye Jenkins ten ya da Runner class tan çalıştırmaya yönelik isRunningOnJenkins() metodu ve kod eklendi.">
+    <list default="true" id="8982d521-96b2-4787-b4e4-1f97b7dfca43" name="Changes" comment="Jenkins için POM'a profile dependencies eklendi">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Utilities/GWD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utilities/GWD.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -383,7 +381,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699382377626</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Jenkins için POM'a profile dependencies eklendi">
+      <option name="closed" value="true" />
+      <created>1699460218648</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1699460218648</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -398,7 +404,8 @@
     <MESSAGE value="Jenkinste Firefox default tanımlandı.&#10;memory sinin maximum çalışması &quot;headless&quot; için GWD ye kod eklendi." />
     <MESSAGE value="Jenkinste Firefox default tanımlandı.&#10;threadBrowserName.set(&quot;firefox&quot;)" />
     <MESSAGE value="GWD ye Jenkins ten ya da Runner class tan çalıştırmaya yönelik isRunningOnJenkins() metodu ve kod eklendi." />
-    <option name="LAST_COMMIT_MESSAGE" value="GWD ye Jenkins ten ya da Runner class tan çalıştırmaya yönelik isRunningOnJenkins() metodu ve kod eklendi." />
+    <MESSAGE value="Jenkins için POM'a profile dependencies eklendi" />
+    <option name="LAST_COMMIT_MESSAGE" value="Jenkins için POM'a profile dependencies eklendi" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
