@@ -4,6 +4,7 @@
     <file url="file://$PROJECT_DIR$/Test Reports/TestReport 21-Eyl-23 21.16.06/test-output/PdfReport/ExtentPdf.pdf" charset="ISO-8859-1" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/test/java/Runners/_04_TestRunnerSmoke.java" charset="windows-1254" />
     <file url="file://$PROJECT_DIR$/src/test/java/StepDefinitions/_01_LoginSteps.java" charset="windows-1254" />
     <file url="file://$PROJECT_DIR$/src/test/java/StepDefinitions/_08_DataTableOrnek.java" charset="windows-1254" />
     <file url="file://$PROJECT_DIR$/test/java/StepDefinitions/_14__JDBCStatesSteps.java" charset="windows-1254" />
