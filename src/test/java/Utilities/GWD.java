@@ -16,8 +16,8 @@ import java.util.logging.Logger;
 public class GWD {
 
     private static ThreadLocal<WebDriver> threadDriver = new ThreadLocal<>();
-    //threadDriver.get()  -> bulunduðum thread deki driver'ý al
-    //threadDriver.set(driver)  -> bulunduðum thread'e driver'ý ver
+    //threadDriver.get()  -> bulunduðum thread deki driver'ý getir
+    //threadDriver.set(driver)  -> bulunduðum thread'e driver'ý ayarla
 
     public static ThreadLocal<String> threadBrowserName = new ThreadLocal<>();
 
@@ -41,8 +41,8 @@ public class GWD {
 
         // gelen browser ismine göre firefox, edge, safari, chrome, browser switch ile set ediliyor.
         if (threadDriver.get() == null) {// eðer driver boþ ise 1 kere çalýþsýn.
-            switch (threadBrowserName.get()) {
-                case "chrome":// ilgili thread/pipe'e (runnerstan gelen browser isteðine) bir ChromeDriver'ý set ettim.
+            switch (threadBrowserName.get()) {// ilgili thread/pipe'a ParallelTesting.xml den _08_ParallelTest runner class'a gelen browser isteðine göre bir Driver'ý set ediyorum.
+                case "chrome":
                     threadDriver.set(new ChromeDriver());
                     break;
                 case "edge":
