@@ -9,8 +9,8 @@ import io.cucumber.testng.CucumberOptions;
         features = {"src/test/java/FeatureFiles"},
         glue = {"StepDefinitions"},
         dryRun = false, // default deðeri false. Eðer testleri direkt çalýþtýracaksan dryRun'ý kullanmana gerek yok.
-        // true olduðunda çalýþtýrmadan FeatureFileslerin DefinitonStepleri (yani gerekli çalýþtýrma dosyalarý) var mý? diye kontrol eder.
-        // false olduðunda ise testi çalýþtýrýr.
+        // true olduðunda testler çalýþmadan önce FeatureFiles larýn StepDefinitons larý (yani gerekli çalýþtýrma dosyalarý) var mý? diye kontrol eder.
+        // false olduðunda ise testleri çalýþtýrýr.
 
         plugin={
                 "pretty",//Ben ekledim -> raporlarin daha okunakli olmasi icin
@@ -23,7 +23,7 @@ import io.cucumber.testng.CucumberOptions;
         // pom.xml'e gerekli dependency si eklenmek þartýyla aþaðýdaki raporlamalar da kullanýlabilir.
         // "json:target/json-reports/cucumber.json", -> JSON rapor tipi için kullanýlabilir
         // "junit:test-output/htmlReport/cucumber.xml", -> xml rapor tipi için kullanýlabilir.
-        monochrome = true //Ben ekledim -> raporlarin consoleda okunakli sekilde cikmasi icin
+        monochrome = true //Ben ekledim -> test adýmlarýnýn console da alt alta düzenli bir sekilde cikmasi icin
 )
 public class _06_TestRunnerSmokeWithPlugin extends AbstractTestNGCucumberTests {
 }

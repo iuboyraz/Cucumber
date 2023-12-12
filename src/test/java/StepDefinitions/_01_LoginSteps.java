@@ -4,9 +4,12 @@ import Pages.DialogContent;
 import Utilities.GWD;
 import Utilities.GWD_Old;
 import io.cucumber.java.en.*;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 
 public class _01_LoginSteps {
-
     DialogContent dc = new DialogContent();
 
     @Given("Navigate to Campus")
@@ -27,10 +30,9 @@ public class _01_LoginSteps {
         dc.password.sendKeys("TechnoStudy123");
         dc.loginButton.click();
         */
-
-        dc.mySendKeys(dc.username, "turkeyts");
-        dc.mySendKeys(dc.password, "TechnoStudy123");
-        dc.myClick(dc.loginButton);
+      dc.mySendKeys(dc.username, "turkeyts");
+      dc.mySendKeys(dc.password, "TechnoStudy123");
+      dc.myClick(dc.loginButton);
     }
 
     @Then("User should login successfully")
@@ -44,5 +46,4 @@ public class _01_LoginSteps {
         */
         dc.verifyContainsText(dc.txtTechnoStudy, "Techno Study");
     }
-
 }

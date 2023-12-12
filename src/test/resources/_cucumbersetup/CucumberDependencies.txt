@@ -19,13 +19,13 @@
 	9-org.apache.poi / poi ve org.apache.poi / poi-ooxml -> for excel processes
 	10-mysql-connector-java -> for JDBC 
    
-   . add under every depency "<scope>test</scope>" line
-   . correct compiler version 19 -> 1.9
+   . You may add under every depency "<scope>test</scope>" line
+   . You may correct compiler version 19 -> 1.9
 
    3-Intellij Editor configuration
    File
-   settings
-   plugins
+   Settings
+   Plugins
         1-cucumber for java
         2-gherkin (https://cucumber.io/docs/gherkin/reference/#keywords)
 
@@ -34,5 +34,5 @@
    FeatureFiles   -> Senaryolarımızın olduğu klasör
    Pages          -> Page Object Model sayfalarımız POM (@FindBy)
    Runners        -> Çalıştırıcılar
-   StepDefinitions-> Senaryoların çalışan adımları - metodları burada olacak
-   Utilities      -> Driver ve diğer tekrar kullanılacak metodlarımız
+   StepDefinitions-> Senaryoların çalışan adımları - metodlar burada olacak
+   Utilities      -> Driver ve sürekli kullanılabilecek diğer metodlarımız

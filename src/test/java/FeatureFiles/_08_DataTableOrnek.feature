@@ -1,3 +1,5 @@
+# TestNG de "dataProvider", cucumber da ise "Scenario Outline" ayný iþleve sahiptir.
+# DataTable ise bir stepe (tüm senaryoyu en baþtan tekrar çalýþtýrmadan) istenilen data yý tek seferde göndermemizi saðlýyor.
 Feature: DataTable Ornek
 
   Scenario: Users List
